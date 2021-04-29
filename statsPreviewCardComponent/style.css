@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    background: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+}
+
+.content{
+    font-size: 0.7em;
+    width: 88%;
+    margin: 70px 6% 70px 6%;
+    text-align: center;
+    background: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 2fr;
+}
+
+.information p:nth-of-type(1){
+    margin: 15px 0 20px 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+}
+
+h2{
+    margin: 20px 0px 5px 0px;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+.image-container{
+    background-image: linear-gradient( hsla(277, 88%, 30%, 0.6), hsla(277, 88%, 30%, 0.6) ),
+    url(media/image-header-mobile.jpg);
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.information{
+    padding: 12%;
+}
