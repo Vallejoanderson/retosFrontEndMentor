@@ -18,13 +18,14 @@ body{
 .content{
     font-size: 0.7em;
     width: 88%;
+    height: 90vh;
     margin: 70px 6% 70px 6%;
     text-align: center;
     background: hsl(244, 38%, 16%);
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 1fr 2fr;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .information p:nth-of-type(1){
@@ -58,8 +59,10 @@ span{
     url(media/image-header-mobile.jpg);
     background-size: 100% 100%;
     border-radius: 10px 10px 0 0;
+    flex: 1;
 }
 
 .information{
     padding: 12%;
+    flex: 2;
 }
