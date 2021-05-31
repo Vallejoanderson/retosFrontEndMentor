@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*,
+html,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Spartan', sans-serif;
+  font-size: 10px;
+}
+
+h1{
+  font-size: 3.1em;
+  color:hsl(300, 43%, 22%);
+}
+
+.main_section{
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.main_title{
+  margin-bottom: 10px;
+}
+
+.main_paragraph p{
+  color: hsl(303, 10%, 53%);
+}
+
+.main_paragraph{
+  line-height: 1.8;
+  font-size: 1.3em;
+}
+
+.stars{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.stars div{
+  padding: 5px;
+}
+
+.stars_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews{
+  background: hsl(300, 24%, 96%);
+  color: hsl(300, 43%, 22%);
+  width: 90%;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.reviews h2{
+  font-size: 1.4em;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first_card, .second_card, .third_card{
+  background: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  width: 90%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 40px 30px 30px 30px;
+}
+
+.first_card p, .second_card p, .third_card p{
+  font-size: 1.2em;
+  line-height: 1.6;
+  color:hsl(0, 0%, 100%);
+}
+
+.profile_picture{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.picture_name{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.user_data{
+  padding: 5px 0 0 20px;
+}
+.user_data h2{
+  font-size: 1.4em;
+}
+
+.user_data p{
+  color: hsl(333, 80%, 67%);
+  font-size: 1.3em;
+}
+
+@media (min-width: 780px){
+  .header{
+    display: flex;
+  }
+
+  h1{
+    font-size: 4em;
+  }
+
+  .main_paragraph{
+    font-size: 1.5em;
+  }
+
+  .main_section{
+    width: 50%;
+    padding: 7% 15% 2% 10%;
+  }
+
+  .stars_section{
+    width: 50%;
+    padding: 7% 0 2% 0;
+    align-items: flex-start;
+  }
+
+  .reviews{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 0% 0% 10%;
+  }
+
+  .first_card, .second_card, .third_card{
+    width: 25%;
+    font-size: 1.1em;
+    margin: 0 20px 20px 20px;
+  }
+
+  .second_card{
+      margin-top: 30px;
+  }
+
+  .third_card{
+    margin-top: 60px;
+  }
+
+  .user_data h2{
+    font-size: 1.6em;
+  }
+  
+  .user_data p{
+    font-size: 1.4em;
+  }
+
+  .reviews{
+    width: 60%;
+    padding: 15px 15px 5px 20px;
+  }
+
+  #review_two{
+    margin-left: 40px;
+  }
+
+  #review_three{
+    margin-left: 80px;
+  }
+}
