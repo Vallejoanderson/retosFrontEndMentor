@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*,
+html,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  font-size: 16px;
+}
+
+/* Applying Mobile First Technique*/
+
+h1{
+  font-size: 1.5em;
+  font-weight: 350;
+  color: hsl(229, 6%, 66%);
+}
+
+h2{
+  margin: 0 0 5% 0;
+}
+
+p{
+  color: hsl(229, 6%, 66%);
+  margin: 5px 0 25px 0 ;
+}
+
+h2, h3{
+  color: hsl(234, 12%, 34%);
+}
+
+.main-content{
+  margin: 5% 0 20% 0;
+}
+
+.container{
+  padding: 10%;
+}
+
+.card{
+  margin: 3vh 0;
+  padding: 5%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px hsl(214, 10%, 86%);
+}
+
+.card-supervisor{
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.card-teambuilder{
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.card-karma{
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.card-calculator{
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.image-container{
+  margin: 0 0 5% 80%;
+  width: 48px;
+  height: 48px;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px){
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+  }
+
+  .card-supervisor{
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+  }
+
+  .card-teambuilder{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .card-karma{
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+  }
+
+  .card-calculator{
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+  }
+
+  .main-content{
+    text-align: center;
+    margin: auto;
+  }
+
+  .main-content p{
+    padding: 0 15%;
+  }
+
+  .main-content h2{
+    margin-bottom: 10px;
+  }
+
+  p{
+    font-size: 0.8rem;
+  }
+}
