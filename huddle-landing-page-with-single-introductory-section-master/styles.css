@@ -56,11 +56,23 @@ img{
   width: 80%;
   margin: 0 auto 5% auto;
 }
-
+/*styling button*/
 button{
   margin: 5% auto 0 auto;
   padding: 10px 70px;
   border-radius: 60px;
   color:hsl(257, 40%, 49%);
-  border-bottom: none;
+  border: 1px solid #fff;
+}
+
+.social-network{
+  width: 100%;
+}
+
+i{
+  margin: 20% 10px 0 10px;
+}
+
+a{
+  color: #fff;
 }
