@@ -44,7 +44,7 @@ body{
 }
 
 .main-image{
-  object-fit: cover;
+  object-fit: contain;
 }
 
 img{
@@ -75,4 +75,56 @@ i{
 
 a{
   color: #fff;
+}
+
+@media (min-width: 768px){
+  .logo-container{
+    width: 15%;
+    margin: 2% 5% 0 5%;
+  }
+
+  .main{
+    padding: 3% 5% 0 5%;
+    display: flex;
+  }
+
+  .main-content{
+    padding: 5%;
+    text-align: left;
+  }
+
+  h1{
+    font-size: 3.2em;
+    padding-right: 80px;
+  }
+
+  p{
+    font-size: 1.6em;
+  }
+
+  button{
+    padding: 15px 60px;
+  }
+
+  button:hover{
+    background-color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    color: #fff;
+  }
+
+  i{
+    margin: 10px;
+  }
+
+  i:hover{
+    color: hsl(300, 75%, 76%);
+  }
+
+  .main-image-container, .main-content{
+    margin-bottom: 2%;
+  }
+
+  body{
+    background-image: url("images/bg-desktop.svg");
+  }
 }
