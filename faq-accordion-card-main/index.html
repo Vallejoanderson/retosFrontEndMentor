@@ -2,23 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">  
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
 </head>
   <body>
+    <!-- All the content -->
     <div class="container">
-      <div class="top-image">
-        <img src="images/illustration-woman-online-mobile.svg" alt="main-image">
+      <!--Main top images-->
+      <div class="images-container">
+        <div class="top-image">
+          <img srcset="images/illustration-woman-online-mobile.svg 266w,
+                      images/illustration-woman-online-desktop.svg 689w" 
+                sizes="(max-width: 689px) 266px,
+                      689px"
+                src="images/illustration-woman-online-mobile.svg"
+                alt="main-image">
+        </div>
+        <div class="top-base-image">
+          <img class="top-base" 
+                srcset="images/bg-pattern-mobile.svg 266w,
+                      images/bg-pattern-desktop.svg 689w" 
+                sizes="(max-width: 689px) 266px,
+                      690px"
+                src="images/bg-pattern-mobile.svg"
+                alt="main-image">
+        </div>
+        <div class="box-container">
+          <img src="images/illustration-box-desktop.svg" alt="box">
+        </div>
       </div>
-      <div class="top-base-image">
-        <img class="top-base" src="images/bg-pattern-mobile.svg" alt="top-base-image">
-      </div>
+      <!-- Main text content -->
       <div class="text-content">
         <h1>FAQ</h1>
+        <!-- Every question section-->
         <div class="question">
           <div class="icon">
             <img src="images/icon-arrow-down.svg" alt="icon">

@@ -28,6 +28,7 @@ h1{
 }
 
 h2, p{
+  cursor: pointer;
   font-size: 1.2em;
   margin-bottom: 15px;
   padding-right: 15%;
@@ -48,7 +49,7 @@ h2, p{
 .container{
   background-color: #fff;
   border-radius: 20px;
-  margin: 150px auto 0 auto;
+  margin: 150px auto 50px auto;
   width: 90%;
 }
 
@@ -84,6 +85,65 @@ h2, p{
   margin: 0 auto;
 }
 
+.box-container{
+  display: none;
+}
+
 .rotate{
   transform: rotate(180deg);
+}
+
+@media (min-width: 689px){
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 130px auto 0 auto;
+    position: relative;
+    width: 650px;
+  }
+
+  h1{
+    text-align: left;
+  }
+
+  h2:hover{
+    color: rgb(235, 196, 80);
+  }
+
+  img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .images-container{
+    width: 400px;
+    height: 300px;
+    position: relative;
+  }
+
+  .top-image, .top-base-image{
+    position: absolute;
+    top: 20px;
+    left: -70%;
+  }
+
+  .top-base-image{
+    position: relative;
+    top: 0;
+    left: -35%;
+  }
+
+  .text-content{
+    width: 70%;
+    padding-left: 0;
+  }
+
+  .box-container{
+    display: block;
+    width: 20%;
+    position: absolute;
+    top: 120px;
+    left: -10%;
+  }
 }
