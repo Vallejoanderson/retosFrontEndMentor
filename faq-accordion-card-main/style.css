@@ -125,13 +125,13 @@ h2, p{
   .top-image, .top-base-image{
     position: absolute;
     top: 20px;
-    left: -70%;
+    left: -40%;
   }
 
   .top-base-image{
     position: relative;
     top: 0;
-    left: -35%;
+    left: -15%;
   }
 
   .text-content{
@@ -144,6 +144,6 @@ h2, p{
     width: 40%;
     position: absolute;
     top: 100px;
-    left: -40%;
+    left: -25%;
   }
 }
