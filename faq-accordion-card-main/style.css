@@ -141,9 +141,9 @@ h2, p{
 
   .box-container{
     display: block;
-    width: 20%;
+    width: 40%;
     position: absolute;
-    top: 120px;
-    left: -10%;
+    top: 100px;
+    left: -40%;
   }
 }
