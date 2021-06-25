@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+	background-color: hsl(210, 46%, 95%);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+h2{
+	color: hsl(217, 19%, 35%);
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.text > p{
+	color: hsl(214, 17%, 51%);
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.container{
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 80px auto 50px auto;
+	position: relative;
+	width: 90%;
+}
+
+.image-container{
+	height: 100%;
+	width: 100%;
+}
+
+img{
+	border-radius: 10px 10px 0 0;
+	height: 100%;
+	width: 100%;
+}
+
+.text{
+	padding: 30px;
+}
+
+.profile{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 35px;
+}
+
+.profile-image img{
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+}
