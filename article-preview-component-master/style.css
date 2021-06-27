@@ -39,13 +39,13 @@ h2{
 }
 
 .image-container{
-	height: 230px;
-	width: 100%;
 	background-image: url("images/drawers.jpg");
 	background-position: top -17px left 0;
 	background-repeat: cover;
 	background-size: cover;
 	border-radius: 10px 10px 0 0;
+	height: 230px;
+	width: 100%;
 }
 
 .text{
@@ -92,11 +92,11 @@ h2{
 	background-color: hsl(210, 46%, 95%);
 	border-radius: 50%;
 	cursor: pointer;
-	height: 31px;
+	height: 37px;
 	margin-top: 15px;
 	margin-right: 35px;
-	padding: 8px 0 0 8px;
-	width: 31px;
+	padding: 12px 0 0 12px;
+	width: 37px;
 }
 
 #icon{
@@ -137,4 +137,86 @@ h2{
 .social-icon{
 	color: #fff;
 	margin-right: 15px;
+}
+
+.attribution, a:link, a:visited{
+	color:hsl(217, 19%, 35%);
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+@media (min-width: 600px){
+	.container{
+		display: flex;
+		height: 300px;
+		margin-top: 300px ;
+		width: 810px;
+	}
+
+	.information-section{
+	}
+
+	.image-container{
+		background-position: top 0 left 0;
+		border-radius: 10px 0 0 10px;
+		height: 100%;
+		width: 675px;
+	}
+
+	h2{
+		font-size: 1.8em;
+		padding-left: 10px;
+		padding-right: 70px;
+	}
+
+	.text{
+		padding-bottom: 25px;
+	}
+
+	.text > p{
+		padding-left: 10px;
+	}
+
+
+	.person{
+		padding-left: 20px;
+	}
+
+	.share-button{
+		margin-right: 45px;
+	}
+
+	.show .profile{
+		display: flex;
+	}
+
+	.person{
+		padding-right: 0;
+	}
+
+	.social-media{
+		background-color:hsl(217, 19%, 35%);
+		border-radius: 10px;
+		height: 60px;
+		position: absolute;
+		bottom: 110px;
+		right:  -70px;
+		padding-bottom: 35px;
+		width: 250px;
+	}
+
+	.social-media p{
+		padding-top: 20px;
+	}
+
+	.icons{
+		padding-top: 17px;
+	}
+
+	.show{
+		background-color: #fff;
+	}
 }
