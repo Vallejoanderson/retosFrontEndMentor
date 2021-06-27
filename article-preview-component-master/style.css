@@ -32,7 +32,7 @@ h2{
 
 .container{
 	background-color: #fff;
-	border-radius: 0 0 10px 10px;
+	border-radius: 10px;
 	margin: 80px auto 50px auto;
 	position: relative;
 	width: 90%;
@@ -53,6 +53,7 @@ h2{
 }
 
 .bottom-section{
+	border-radius: 0 0 10px 10px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -90,6 +91,7 @@ h2{
 .share-button{
 	background-color: hsl(210, 46%, 95%);
 	border-radius: 50%;
+	cursor: pointer;
 	height: 31px;
 	margin-top: 10px;
 	margin-right: 35px;
@@ -103,4 +105,32 @@ h2{
 
 .social-media{
 	display: none;
+	height: 100%;
+	width: 70%;
+}
+
+.social-media p{
+	color: hsl(212, 23%, 69%);
+	font-size: 1.1em;
+	letter-spacing: 5px;
+	padding: 24px 15px 22px 35px;
+}
+
+.show .profile{
+	display: none;
+	width: 50%;
+}
+
+.show .social-media{
+	display: flex;
+}
+
+.icons{
+	display: flex;
+	padding-top: 20px;
+}
+
+.social-icon{
+	color: #fff;
+	margin-right: 15px;
 }
