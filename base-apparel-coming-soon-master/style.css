@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+	background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)), 
+										linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	
+}
+
+.logo-container{
+	background-image: url("images/logo.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 35px;
+	margin: 20px 0 5px 30px;
+	width: 90px;
+}
+
+.container{
+	margin: 0 auto;
+	width: 100%;
+}
+
+.image-container{
+	background-image: url("images/hero-mobile.jpg");
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+}
+
+.text-container{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+h2{
+	font-weight: 300;
+	font-size: 2.1em;
+	letter-spacing: 10px;
+	line-height: 1.2;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 100vh;
+}
+
+
+.title1{
+	color: hsl(0, 36%, 70%);
+}
+
+.title2{
+	color: hsl(0, 6%, 24%);
+	font-weight: 400;
+}
+
+p{
+	color: hsl(0, 36%, 70%);
+}
+
