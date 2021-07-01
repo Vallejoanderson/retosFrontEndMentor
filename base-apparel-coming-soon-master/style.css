@@ -58,7 +58,6 @@ h2{
 	word-spacing: 100vh;
 }
 
-
 .title1{
 	color: hsl(0, 36%, 70%);
 }
@@ -72,3 +71,13 @@ p{
 	color: hsl(0, 36%, 70%);
 }
 
+.email{
+	border: 1px solid hsl(0, 7%, 92%);
+	border-radius: 30px;
+	height: 40px;
+	padding-left: 20px;
+}
+
+.email::placeholder{
+	color: hsl(0, 36%, 70%);
+}
