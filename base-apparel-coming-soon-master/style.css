@@ -12,7 +12,7 @@
 
 body{
 	background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)), 
-										linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+					  linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 16px;
 	
@@ -28,7 +28,7 @@ body{
 }
 
 .container{
-	margin: 0 auto;
+	margin: 0 auto 50px auto;
 	width: 100%;
 }
 
@@ -40,9 +40,9 @@ body{
 }
 
 .text-container{
-	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 	width: 80%;
 }
 
@@ -68,7 +68,13 @@ h2{
 }
 
 p{
-	color: hsl(0, 36%, 70%);
+	color: hsl(0, 41%, 42%);
+}
+
+.email-section{
+	margin: 30px auto 50px auto;
+	position: relative;
+	width: 320px;
 }
 
 .email{
@@ -80,4 +86,41 @@ p{
 
 .email::placeholder{
 	color: hsl(0, 36%, 70%);
+}
+
+.email:focus{
+	border: 1px solid hsl(0, 93%, 68%);
+	outline: none;
+}
+
+.alert{
+	display: none;
+	position: absolute;
+	top: 7px;
+	right: 90px;
+	height: 32px;
+	width: 32px;
+}
+
+.alert__message{
+	display: none;
+	font-size: 0.8em;
+	padding-top: 10px;
+	padding-left: 30px;
+	text-align: left;
+}
+
+.show-alert{
+	display: block;
+}
+
+.button{
+	background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	border: hsl(0, 74%, 74%);
+	border-radius: 25px;
+	cursor: pointer;
+	padding: 12px 32px 7px 32px;
+	position: absolute;
+	top: -2px;
+	right: 5px;
 }
