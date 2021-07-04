@@ -68,7 +68,7 @@ h2{
 }
 
 p{
-	color: hsl(0, 41%, 42%);
+	color: hsl(0, 36%, 70%);
 }
 
 .email-section{
@@ -123,4 +123,11 @@ p{
 	position: absolute;
 	top: -2px;
 	right: 5px;
+}
+
+@media (min-width: 740px){
+	.container{
+		display: flex;
+		flex-direction: row-reverse;
+	}
 }
