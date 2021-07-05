@@ -22,10 +22,10 @@ body{
 .logo-container{
 	background-image: url("images/logo.svg");
 	background-repeat: no-repeat;
-	background-size: contain;
-	height: 35px;
-	margin: 20px 0 5px 30px;
-	width: 90px;
+	background-position: top 25px left 30px;
+	background-size: 90px 20px;
+	height: 65px;
+	width: 100%;
 }
 
 .container{
@@ -33,7 +33,7 @@ body{
 	width: 100%;
 }
 
-.image-container{
+.main-image{
 	background-image: url("images/hero-mobile.jpg");
 	background-size: cover;
 	height: 300px;
@@ -128,24 +128,63 @@ p{
 
 @media (min-width: 740px){
 	.container{
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-around;
-		margin: 0;
+		display: grid;
+		grid-template-areas: 
+				"top right"
+				"left right";
+		grid-template-columns: 7fr 6fr;
+		margin-bottom: 0;
 	}
 
-	.image-container{
+	.logo-container{
+		grid-area: top;
+		background-position: top 50px left 30px;
+		background-size: 140px 30px;
+		height: 80px;
+	}
+
+	.main-image{
 		background-image: url("images/hero-desktop.jpg");
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
+		grid-area: right;
 		height: 100vh;
-		position: relative;
-		top: -60px;
-		right: 0px;
-		width: 30%;
+		width: 100%;
 	}
 
 	.text-container{
-		width: 60%;
+		grid-area: left;
+		margin: 0;
+		text-align: left;
+		padding: 0 40px 0 30px;
 	}
+
+	h2{
+		font-size: 3.5em;
+		text-align: left;
+	}
+
+	.text-container > p{
+		font-size: 1.2em;
+	}
+
+	.email-section{
+	margin: 35px 0;
+	}
+}
+
+@media (min-width: 1040px){
+	.container{
+		grid-template-columns: 7fr 4fr;
+	}
+
+	.logo-container{
+		background-position: top 50px left 200px;
+	}
+
+	.text-container{
+		padding-left: 200px;
+		padding-right: 70px;
+	}
+
 }
