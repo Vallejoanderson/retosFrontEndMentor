@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+	background-color: hsl(0, 100%, 74%) ;
+	background-image: url("images/bg-intro-mobile.png");
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	text-align: center;
+}
+
+.container{
+	margin: 50px auto 0 auto;
+	width: 85%;
+}
+
+.register-section__form{
+	background-color: #fff;
+	border-radius: 7px;
+	padding-top: 20px;
+}
+
+.register-section__data{
+	margin-bottom: 15px;
+}
+
+.register-section__data input{
+	border: 1px solid rgb(236, 236, 236);
+	font-weight: 600;
+	font-size: 1em;
+	padding: 15px 10px;
+	width: 85%;
+}
+
+#button{
+	background-color: hsl(154, 59%, 51%);
+	border: hsl(154, 59%, 51%);
+	border-radius: 7px;
+	color: #fff;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
