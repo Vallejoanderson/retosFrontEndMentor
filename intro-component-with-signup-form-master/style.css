@@ -16,8 +16,33 @@ body{
 }
 
 .container{
-	margin: 50px auto 0 auto;
+	margin: 50px auto 40px auto;
 	width: 85%;
+}
+
+h2{
+	font-size: 2em;
+	padding: 0 60px;
+}
+
+article p{
+	font-size: 1.1em;
+	font-weight: 500;
+	line-height: 1.5;
+	padding: 2em 4em;
+}
+
+.promo{
+	background-color: hsl(248, 32%, 49%);
+	border-radius: 5px;
+	font-size: 1.2em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	padding: 1em 7em 1em 7em;
+}
+
+.bold{
+	font-weight: 600;
 }
 
 .register-section__form{
@@ -32,10 +57,16 @@ body{
 
 .register-section__data input{
 	border: 1px solid rgb(236, 236, 236);
+	border-radius: 5px;
 	font-weight: 600;
 	font-size: 1em;
 	padding: 15px 10px;
 	width: 85%;
+}
+
+.register-section__data input:focus{
+	border: 1px solid hsl(248, 32%, 49%);
+	outline: none;
 }
 
 #button{
@@ -46,4 +77,15 @@ body{
 	font-size: 1.1em;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+
+#conditions{
+	color: hsl(246, 25%, 77%);
+	font-size: 0.9em;
+	padding: 0 4em 2em 4em;
+}
+
+.terms{
+	color: hsl(0, 100%, 74%);
+	font-weight: 700;
 }
