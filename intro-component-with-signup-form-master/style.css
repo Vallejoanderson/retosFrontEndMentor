@@ -74,6 +74,7 @@ article p{
 	border: hsl(154, 59%, 51%);
 	border-radius: 7px;
 	color: #fff;
+	cursor: pointer;
 	font-size: 1.1em;
 	letter-spacing: 1px;
 	text-transform: uppercase;
