@@ -90,3 +90,30 @@ article p{
 	color: hsl(0, 100%, 74%);
 	font-weight: 700;
 }
+
+@media (min-width: 680px){
+	.container{
+		display: flex;
+		justify-content: center;
+		margin: 120px auto;
+		width: 100%;
+	}
+
+	article{
+		text-align: left;
+		padding-top: 150px;
+		width: 50%;
+	}
+
+	article > p{
+		font-size: 1.4em;
+	}
+
+	h2{
+		font-size: 3em;
+	}
+
+	.register-section{
+		width: 30%;
+	}
+}
