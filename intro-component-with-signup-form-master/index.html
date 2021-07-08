@@ -23,16 +23,20 @@
       </div>
       <form class="register-section__form">
         <div class="register-section__data">
-          <input type="text" placeholder="First Name" name="firstname" id="firstname" required>
+          <input type="text" placeholder="First Name" name="firstname" id="firstname" novalidate>
+          <p class="warning">First name cannot be empty</p>
         </div>
         <div class="register-section__data">
-          <input type="text" placeholder="Last Name" name="lastname" id="lastname" required>
+          <input type="text" placeholder="Last Name" name="lastname" id="lastname" novalidate>
+          <p class="warning">Last name cannot be empty</p>
         </div>
         <div class="register-section__data">
-          <input type="email" placeholder="Email Address" name="email" id="email" required>
+          <input type="email" placeholder="Email Address" name="email" id="email" novalidate>
+          <p class="warning">Looks like this is not an email</p>
         </div>
         <div class="register-section__data">
-          <input type="password" placeholder="Password" name="password" id="password" required>
+          <input type="password" placeholder="Password" name="password" id="password" novalidate>
+          <p class="warning">Password cannot be empty</p>
         </div>
         <div class="register-section__data">
           <input id="button" type="submit" value="Claim your free trial">

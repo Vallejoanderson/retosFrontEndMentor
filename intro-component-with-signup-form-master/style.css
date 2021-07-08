@@ -91,29 +91,53 @@ article p{
 	font-weight: 700;
 }
 
-@media (min-width: 680px){
+.warning{
+	color:hsl(0, 100%, 74%);
+	display: none;
+	font-style: italic;
+	font-weight: 600;
+	margin-top: 5px;
+	padding-right: 4em;
+	text-align: right;
+}
+
+.show{
+	display: block;
+}
+
+@media (min-width: 780px){
+	body{
+		background-image: url("images/bg-intro-desktop.png");
+	}
+
 	.container{
 		display: flex;
 		justify-content: center;
-		margin: 120px auto;
+		margin: 60px auto;
 		width: 100%;
 	}
 
 	article{
+		height: 300px;
 		text-align: left;
-		padding-top: 150px;
 		width: 50%;
 	}
 
 	article > p{
-		font-size: 1.4em;
+		font-size: 1.8em;
 	}
 
 	h2{
-		font-size: 3em;
+		font-size: 5.2em;
 	}
 
 	.register-section{
 		width: 30%;
+	}
+}
+
+@media (min-width: 1040px){
+	.container{
+		align-items: center;
 	}
 }
