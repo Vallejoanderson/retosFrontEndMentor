@@ -139,5 +139,6 @@ article p{
 @media (min-width: 1040px){
 	.container{
 		align-items: center;
+		margin-top: 130px;
 	}
 }
