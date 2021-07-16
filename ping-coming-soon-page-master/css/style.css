@@ -102,3 +102,50 @@
 .icon{
 	color: hsl(223, 87%, 63%);
 }
+
+@media (min-width: 590px){
+	.container{
+		width: 65%;
+	}
+
+	.container__image-logo{
+		width: 10%;
+	}
+
+	.notification-section{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	.notification-section__email{
+		width: 65%;
+	}
+
+	.notification-section__button{
+		width: 30%;
+	}
+
+	.footer{
+		margin-top: 30px;
+	}
+}
+
+@media (min-width: 900px){
+	.container{
+		margin-top: 25px;
+		width: 35%;
+	}
+
+	.container__image-logo{
+		width: 15%;
+	}
+
+	.container__title{
+		font-size: 1.8rem;
+		margin-bottom: 15px;
+	}
+
+	.container__main-image{
+		margin-top: 30px;
+	}
+}
