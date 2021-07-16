@@ -69,6 +69,21 @@
 	border: 1px solid hsl(354, 100%, 66%);
 }
 
+.error__message{
+	color: hsl(354, 100%, 66%);
+	display: none;
+	font-style: italic;
+	font-size: 0.7rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+.error__message--display-show{
+	display: block;
+}
+
+.show-erro
+
 .container__main-image{
 	margin-top: 55px;
 	width: 100%;
