@@ -28,7 +28,7 @@
 
 .container__title--weight-light{
 	color: hsl(209, 33%, 12%);
-	display: inline-block;
+	display: block;
 	font-size: 0.8rem;
 	margin-top: 10px;
 }
@@ -122,22 +122,30 @@
 	}
 
 	.notification-section{
-		flex-direction: row;
-		justify-content: space-around;
+		display: grid;
+		grid-template-areas: "top-left top-right"
+													"bottom bottom";
 	}
 	
 	.notification-section__email{
-		width: 65%;
+		grid-area: top-left;
 	}
 
 	.notification-section__button{
-		width: 30%;
+		grid-area: top-right;
 	}
 
 	.notification-section__button:hover{
 		background-color: hsl(223, 79%, 74%);
 		border: 1px solid hsl(223, 79%, 74%);
 	}
+
+	.error__message--display-show{
+		display: block;
+		grid-area: bottom;
+		padding-left: 30px;
+		text-align: left;
+	}	
 
 	.footer{
 		margin-top: 30px;
