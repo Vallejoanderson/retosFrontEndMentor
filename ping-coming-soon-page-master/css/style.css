@@ -60,7 +60,7 @@
 	font-size: 0.7rem;
 	font-weight: 600;
 	margin-top: 10px;
-	padding: 15px 0 10px 0;
+	padding: 12px 0 12px 0;
 	width: 85%;
 }
 
@@ -94,10 +94,11 @@
 .icon__container{
 	border: 1px solid hsl(223, 100%, 88%);
 	border-radius: 50%;
+	cursor: pointer;
 	margin-right: 20px;
 	height: 25px;
 	width: 25px;
-	padding-top: 5px;
+	padding-top: 2px;
 }
 .icon{
 	color: hsl(223, 87%, 63%);
@@ -132,6 +133,15 @@
 
 	.footer{
 		margin-top: 30px;
+	}
+
+	.icon__container:hover{
+		background-color: hsl(223, 87%, 63%);
+		border: 1px solid hsl(223, 87%, 63%);
+	}
+
+	.icon__container:hover .icon{
+		color: #fff;
 	}
 }
 
