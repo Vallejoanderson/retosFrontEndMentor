@@ -129,10 +129,13 @@
 	
 	.notification-section__email{
 		grid-area: top-left;
+		padding-right: 50px;
 	}
 
 	.notification-section__button{
 		grid-area: top-right;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 
 	.notification-section__button:hover{
