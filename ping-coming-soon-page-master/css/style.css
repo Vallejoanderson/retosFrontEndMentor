@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+}
+
+.container{
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 10px;
+	margin: 70px auto 0 auto;
+	text-align: center;
+	width: 90%;
+}
+
+.container__image-logo{
+	width: 15%;
+}
+
+.container__title{
+	color: hsl(0, 0%, 59%);
+	font-weight: 300;
+	font-size: 1.4rem;
+	margin-top: 30px;
+}
+
+.container__title--weight-bold{
+	color: #000;
+	font-weight: 700;
+}
+
+.container__title--weight-light{
+	color: hsl(209, 33%, 12%);
+	display: inline-block;
+	font-size: 0.8rem;
+	margin-top: 10px;
+}
+
+.notification-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.notification-section__email{
+	border: 1px solid  hsl(223, 100%, 88%);
+	border-radius: 25px;
+	padding: 15px 0 10px 25px;
+	margin-top: 10px;
+	width: 85%;
+}
+
+.notification-section__email::placeholder{
+	color:  hsl(0, 0%, 59%);
+}
+
+.notification-section__button{
+	background: hsl(223, 87%, 63%);
+	border: 1px solid hsl(223, 87%, 63%);
+	border-radius: 30px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 0.7rem;
+	font-weight: 600;
+	margin-top: 10px;
+	padding: 15px 0 10px 0;
+	width: 85%;
+}
+
+.notification-section__email:focus{
+	outline: none;
+	border: 1px solid hsl(354, 100%, 66%);
+}
+
+.container__main-image{
+	margin-top: 55px;
+	width: 100%;
+}
+
+.footer{
+	margin-top: 70px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.footer__icons{
+	display: flex;
+	justify-content: center;
+}
+
+.footer__text{
+	color: hsl(0, 0%, 59%);
+	font-size: 0.6rem;
+	margin-top: 20px;
+}
+
+.icon__container{
+	border: 1px solid hsl(223, 100%, 88%);
+	border-radius: 50%;
+	margin-right: 20px;
+	height: 25px;
+	width: 25px;
+	padding-top: 5px;
+}
+.icon{
+	color: hsl(223, 87%, 63%);
+}

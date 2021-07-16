@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+<body> <!-- First test learning how to use BEM Methodology -->
+  <div class="container">
+    <img class="container__image-logo" src="images/logo.svg" alt="logo">
+    <h2 class="container__title">We are launching <span class="container__title--weight-bold">soon!</span>
+        <span class="container__title--weight-light">Subscribe and get notified</span>
+    </h2>
+    <form class="notification-section">
+      <input class="notification-section__email" type="email" placeholder="Your email address" name="email" id="email" novalidate>
+      <input class="notification-section__button" type="submit" value="Notify Me">
+    </form>
+    <img class="container__main-image" src="images/illustration-dashboard.png" alt="main image">
+  </div>
+  <footer class="footer">
+    <div class="footer__icons">
+      <div class="icon__container">
+        <i class="icon fab fa-facebook-f fa-sm"></i>
+      </div>
+      <div class="icon__container">
+        <i class="icon fab fa-twitter fa-sm"></i>
+      </div>
+      <div class="icon__container">
+        <i class="icon fab fa-instagram fa-sm"></i>
+      </div>
+    </div>
+    <p class="footer__text">&copy; Copyright Ping. All rights reserved.</p>
+  </footer>
+</body>
+</html>
