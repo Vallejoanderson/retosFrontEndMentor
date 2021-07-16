@@ -125,6 +125,11 @@
 		width: 30%;
 	}
 
+	.notification-section__button:hover{
+		background-color: hsl(223, 79%, 74%);
+		border: 1px solid hsl(223, 79%, 74%);
+	}
+
 	.footer{
 		margin-top: 30px;
 	}
