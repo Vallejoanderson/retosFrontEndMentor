@@ -18,10 +18,10 @@
         <span class="container__title--weight-light">Subscribe and get notified</span>
     </h2>
     <form class="notification-section">
-      <input class="notification-section__email" type="email" placeholder="Your email address" name="email" id="email" novalidate>
+      <input class="notification-section__email" type="email" placeholder="Your email address" name="email" id="email" required>
+      <p class="error__message">Please provide a valid email address</p>
       <input class="notification-section__button" type="submit" value="Notify Me">
     </form>
-    <p class="error__message">Please provide a valid email address</p>
     <img class="container__main-image" src="images/illustration-dashboard.png" alt="main image">
   </div>
   <footer class="footer">
@@ -38,5 +38,6 @@
     </div>
     <p class="footer__text">&copy; Copyright Ping. All rights reserved.</p>
   </footer>
+  <script src="script/main.js"></script>
 </body>
 </html>
