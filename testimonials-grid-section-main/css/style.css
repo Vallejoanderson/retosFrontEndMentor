@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: hsl(210, 46%, 95%);
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container__cards{
+	margin-top: 30px;
+	width: 90%;
+}
