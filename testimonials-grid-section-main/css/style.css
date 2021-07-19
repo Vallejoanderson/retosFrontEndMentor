@@ -19,6 +19,7 @@ body{
 	border-radius: 10px;
 	margin-bottom: 1.5rem;
 	padding: 0px 35px 25px 25px;
+	text-align: left;
 	width: 100%;
 }
 
@@ -45,22 +46,17 @@ body{
 	font-size: 1.2rem;
 	font-weight: 600;
 	margin-top: 0;
-	text-align: left;
 }
 
 .text--display-block{
 	display: block
 }
 
-.card__quotes{
-	right: 1.6rem;
-	position: absolute;
-	top: 0;
-}
-
 .card--color-violet{
 	background-color: hsl(263, 55%, 52%);
-	position: relative;
+	background-image: url(/images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-position: top 0 right 20px;
 }
 
 .card--color-grayblue{
