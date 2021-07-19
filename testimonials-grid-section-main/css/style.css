@@ -37,9 +37,12 @@ body{
 }
 
 .card__title-status{
-	color: hsl(0, 0%, 81%);
 	display: block;
 	font-size: 0.7rem;
+}
+
+.card__title-status--opacity-less{
+	color: hsl(0, 0%, 81%, 0.5);
 }
 
 .card__text-main{
@@ -48,8 +51,28 @@ body{
 	margin-top: 0;
 }
 
+.text-second--gray-less{
+	color: hsl(0, 0%, 81%, .7);
+}
+
+.text-second--darkgray-less{
+	color: hsl(217, 19%, 35%, .7);
+}
+
 .text--display-block{
 	display: block
+}
+
+.text--color-darkgrayblue{
+	color: hsl(217, 19%, 35%);
+}
+
+.text--color-gray{
+	color: hsl(0, 0%, 81%);
+}
+
+.text--color-grayblue{
+	color: hsl(210, 46%, 95%);
 }
 
 .card--color-violet{
