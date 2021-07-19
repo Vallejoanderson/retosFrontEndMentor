@@ -5,9 +5,47 @@
 body{
 	background-color: hsl(210, 46%, 95%);
 	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 13px;
 }
 
 .container__cards{
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 30px;
 	width: 90%;
+}
+
+.card{
+	border-radius: 10px;
+	margin-bottom: 1.5rem;
+	padding: 25px 25px 25px 25px;
+	width: 100%;
+}
+
+.card__profilepic{
+	border-radius: 50%;
+	width: 10%;
+}
+
+.card__quotes{
+	right: 1.6rem;
+	position: absolute;
+	top: 0;
+}
+
+.card--color-violet{
+	background-color: hsl(263, 55%, 52%);
+	position: relative;
+}
+
+.card--color-grayblue{
+	background-color: hsl(217, 19%, 35%);
+}
+
+.card--color-white{
+	background-color: hsl(0, 0%, 100%);
+}
+
+.card--color-blackblue{
+	background-color: hsl(219, 29%, 14%);
 }
