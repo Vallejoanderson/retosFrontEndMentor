@@ -9,11 +9,6 @@ body{
 }
 
 .container__cards{
-	display: grid;
-	column-gap: 20px;
-	grid-template-rows: repeat(auto-fit, 290px);
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-auto-flow: dense;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 100px;
@@ -28,24 +23,12 @@ body{
 	width: 100%;
 }
 
-.card--size-small{
-	grid-column: auto / span 2;
-	max-height: 250px;
-	width: 100%;
-}
-
 .card--size-medium{
-	max-width: 550px;
+	grid-column: span 2;
 }
 
 .card--size-large{
-	width: 100%;
-}
-
-@media (min-width: 600px){
-	.card--size-large, .card--size-small{ 
-		max-width: 250px;
-	}
+	grid-row: span 2;
 }
 
 .card__profilepic{
@@ -117,4 +100,15 @@ body{
 
 .card--color-blackblue{
 	background-color: hsl(219, 29%, 14%);
+}
+
+@media (min-width: 600px){
+	.container__cards{
+		display: grid;
+		column-gap: 20px;
+		grid-auto-flow: dense;
+		grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+		width: 70%;
+	}
 }
