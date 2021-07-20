@@ -9,23 +9,48 @@ body{
 }
 
 .container__cards{
+	display: grid;
+	column-gap: 20px;
+	grid-template-rows: repeat(auto-fit, 290px);
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-flow: dense;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
+	margin-top: 100px;
 	width: 90%;
 }
 
 .card{
 	border-radius: 10px;
 	margin-bottom: 1.5rem;
-	padding: 0px 35px 25px 25px;
+	padding: 0px 35px 5px 25px;
 	text-align: left;
 	width: 100%;
 }
 
+.card--size-small{
+	grid-column: auto / span 2;
+	max-height: 250px;
+	width: 100%;
+}
+
+.card--size-medium{
+	max-width: 550px;
+}
+
+.card--size-large{
+	width: 100%;
+}
+
+@media (min-width: 600px){
+	.card--size-large, .card--size-small{ 
+		max-width: 250px;
+	}
+}
+
 .card__profilepic{
 	border-radius: 50%;
-	width: 10%;
+	width: 30px;
 }
 
 .card__title{
