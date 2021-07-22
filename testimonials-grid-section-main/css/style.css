@@ -23,11 +23,11 @@ body{
 	width: 100%;
 }
 
-.card--size-medium{
+.card-daniel, .card-patrick{
 	grid-column: span 2;
 }
 
-.card--size-large{
+.card-kira{
 	grid-row: span 2;
 }
 
@@ -108,7 +108,34 @@ body{
 		column-gap: 20px;
 		grid-auto-flow: dense;
 		grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-		grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 		width: 70%;
+	}
+}
+
+@media (min-width: 1416px){
+	.container__cards{
+		display: grid;
+		grid-template-areas:  "daniel 	daniel  jonathan   kira"
+												 "jeanette  patrick  patrick   kira";
+	}
+
+	.card-daniel{
+		grid-area: daniel;
+	}
+
+	.card-patrick{
+		grid-area: patrick;
+	}
+
+	.card-jonathan{
+		grid-area: jonathan;
+	}
+
+	.card-jeanette{
+		grid-area: jeanette;
+	}
+
+	.card-kira{
+		grid-area: kira;
 	}
 }
