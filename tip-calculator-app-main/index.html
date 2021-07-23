@@ -3,42 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/syles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <h1 class="title">spli
+    <span class="title--flow-wrap">tter</span>
+  </h1>
+  <div class="calculator">
+    <div class="bill">
+      <p class="bill__title">Bill</p>
+      <input class="input" type="text" id="bill" name="bill" required
+          minlength="4" maxlength="8" size="10">
 
-  Bill
+      <p class="bill__tip">Select Tip %</p>
+        <div class="bill__percentage">5%</div>
+        <div class="bill__percentage">10%</div>
+        <div class="bilL__percentage">15%</div>
+        <div class="bill__percentage">25%</div>
+        <div class="bill__percentage">50%</div>
+      <input class="input" type="text" id="custom" name="custom" required
+        minlength="4" maxlength="2" size="2">
+      <p>Number of People</p>
+      <input class="input" type="text" id="people" name="people" required
+          minlength="4" maxlength="8" size="10">
+    </div>
+    <div class="result">
+      <p>Tip Amount
+      / person<p>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <p>Total
+      / person</p>
+      <div>Reset</div>
+    </div>
   </div>
 </body>
 </html>
