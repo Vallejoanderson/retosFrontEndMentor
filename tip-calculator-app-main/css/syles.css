@@ -66,8 +66,27 @@ html{
     font-weight: 700;
     height: 40px;
     margin-bottom: .5rem;
-    padding-top: 0.4rem;
+    padding-top: 0.3rem;
     padding-bottom: 0.4rem;
     text-align: center;
     width: 139px;
+}
+
+.custom{
+    background-color: var(--lightgraycyantwo);
+    border: 1px solid var(--lightgraycyantwo);
+    color: var(--verydarkcyan);
+    padding-right: .5rem;
+    text-align: right;
+}
+
+.bill__input-top, .bill__input-bottom{
+    position: relative;
+}
+
+.icon{
+    color: var(--darkgraycyantwo);
+    position: absolute;
+    top: 7px;
+    left: 15px;
 }

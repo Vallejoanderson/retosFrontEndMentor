@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/syles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -18,9 +19,11 @@
   <div class="calculator">
     <div class="bill">
       <p class="bill__title">Bill</p>
-      <input class="input" type="text" id="bill" name="bill" required
-          minlength="4" placeholder="0" maxlength="8" size="10">
-
+      <div class="bill__input-top">
+        <input class="input" type="text" id="bill" name="bill" required
+            minlength="4" placeholder="0" maxlength="8" size="10">
+        <i class="icon fas fa-dollar-sign fa-xs"></i>
+      </div>
       <p class="bill__tip">Select Tip %</p>
       <div class="bill__percentage-container">
         <div class="bill__percentage">5%</div>
@@ -28,12 +31,15 @@
         <div class="bill__percentage">15%</div>
         <div class="bill__percentage">25%</div>
         <div class="bill__percentage">50%</div>
-        <input class="bill__percentage" class="input" type="text" id="custom" name="custom" required
-        minlength="4" maxlength="2" size="2">
+        <input class="bill__percentage custom" type="text" id="custom" name="custom" required
+        minlength="4" placeholder="Custom" maxlength="2" size="2">
       </div>
       <p class="bill__people">Number of People</p>
-      <input class="input" type="text" id="people" name="people" required
-          minlength="4" placeholder="0" maxlength="8" size="10">
+      <div class="bill__input-bottom">
+        <input class="input" type="text" id="people" name="people" required
+            minlength="4" placeholder="0" maxlength="8" size="10">
+        <i class="icon fas fa-user fa-xs"></i>
+      </div>
     </div>
     <div class="result">
       <p>Tip Amount
