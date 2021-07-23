@@ -7,6 +7,7 @@
     --darkgraycyantwo: hsl(184, 14%, 56%);
     --lightgraycyan: hsl(185, 41%, 84%);
     --lightgraycyantwo: hsl(189, 41%, 97%);
+    --verydarkcyan: hsl(183, 100%, 15%);
     --white: hsl(0, 0%, 100%);
 }
 
@@ -20,10 +21,10 @@ html{
     color: var(--darkgraycyan);
     font-size: 0.7em;
     letter-spacing: 5px;
-    text-align: center;
-    text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .title--flow-wrap{
@@ -33,15 +34,16 @@ html{
 .calculator{
     background-color: var(--white);
     border-radius: 15px;
+    padding: 0.2rem 1.4rem 1rem 1.4rem;
     text-align: center;
-    padding: 0.5rem 1rem 1rem 1rem;
     width: 100%;
 }
 
-.bill__title, .bill__tip{
+.bill__title, .bill__tip, .bill__people{
     color: var(--darkgraycyantwo);
     font-size: 0.5rem;
     font-weight: 600;
+    margin-top: 25px;
     text-align: left;
 }
 
@@ -49,6 +51,23 @@ html{
     background-color: var(--lightgraycyantwo);
     border: 1px solid var(--lightgraycyantwo);
     border-radius: 5px;
+    color: var(--darkgraycyantwo);
     height: 35px;
+    text-align: right;
     width: 100%;
+}
+
+.bill__percentage{
+    background-color: var(--verydarkcyan);
+    border-radius: 5px;
+    color: var(--white);
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 40px;
+    margin-bottom: .5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    text-align: center;
+    width: 139px;
 }
