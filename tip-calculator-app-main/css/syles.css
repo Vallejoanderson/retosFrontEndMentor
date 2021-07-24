@@ -90,3 +90,35 @@ html{
     top: 7px;
     left: 15px;
 }
+
+.result{
+    background-color: var(--verydarkcyan);
+    border-radius: 10px;
+    padding: 0.6rem 0.9rem;
+    margin-top: 1.1rem;
+}
+
+.result__tip, .result__total{
+    color: var(--white);
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.result__tip-person, .result__total-person{
+    color: var(--darkgraycyantwo);
+    display: block;
+    font-size: 0.5rem;
+    padding-top: 0.1rem;
+}
+
+.result__reset{
+    background-color: hsl(172, 67%, 45% , .2);
+    border-radius: 5px;
+    color: hsl(183, 100%, 15%);
+    font-size: 0.7rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    text-transform: capitalize;
+}
