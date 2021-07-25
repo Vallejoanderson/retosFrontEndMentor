@@ -99,12 +99,26 @@ html{
 }
 
 .result__tip, .result__total{
-    color: var(--white);
-    font-size: 0.6rem;
-    font-weight: 600;
+    width: 100%;
 }
 
-.result__tip-person, .result__total-person{
+.result__tip-display, .result__total-display{
+    color: hsl(172, 67%, 45%);
+    display: inline-block;
+    padding-bottom: 1.5rem;
+    width: 60%;
+}
+
+.result__tip-text, .result__total-text{
+    color: var(--white);
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-align: left;
+    width: 30%;
+}
+
+.result__tip-text-person, .result__total-text-person{
     color: var(--darkgraycyantwo);
     display: block;
     font-size: 0.5rem;
