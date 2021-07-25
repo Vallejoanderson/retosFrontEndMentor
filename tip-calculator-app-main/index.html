@@ -18,13 +18,13 @@
   </h1>
   <div class="calculator">
     <div class="bill">
-      <p class="bill__title">Bill</p>
+      <p class="bill__subtitle">Bill</p>
       <div class="bill__input-top">
         <input class="input" type="text" id="bill" name="bill" required
             minlength="4" placeholder="0" maxlength="8" size="10">
         <i class="icon fas fa-dollar-sign fa-xs"></i>
       </div>
-      <p class="bill__tip">Select Tip %</p>
+      <p class="bill__subtitle">Select Tip %</p>
       <div class="bill__percentage-container">
         <div class="bill__percentage">5%</div>
         <div class="bill__percentage">10%</div>
@@ -34,7 +34,7 @@
         <input class="bill__percentage custom" type="text" id="custom" name="custom" required
         minlength="4" placeholder="Custom" maxlength="2" size="2">
       </div>
-      <p class="bill__people">Number of People</p>
+      <p class="bill__subtitle">Number of People</p>
       <div class="bill__input-bottom">
         <input class="input" type="text" id="people" name="people" required
             minlength="4" placeholder="0" maxlength="8" size="10">
@@ -42,22 +42,22 @@
       </div>
     </div>
     <div class="result">
-      <div class="result__tip">
-        <p class="result__tip-text">
+      <div class="result__section">
+        <p class="result__section-text">
           Tip Amount
-          <span class="result__tip-text-person">
+          <span class="result__section-text-person">
             / person
           </span>
         </p>
-        <div class="result__tip-display">$0.00</div>
+        <p class="result__section-display">$0.00</p>
       </div>
-      <div class="result__total">
-        <p class="result__total-text">Total
-          <span class="result__total-text-person">
+      <div class="result__section">
+        <p class="result__section-text">Total
+          <span class="result__section-text-person">
             / person
           </span>
         </p>
-        <div class="result__total-display">$0.00</div>
+        <p class="result__section-display">$0.00</p>
       </div>
       <div class="result__reset">Reset</div>
     </div>
