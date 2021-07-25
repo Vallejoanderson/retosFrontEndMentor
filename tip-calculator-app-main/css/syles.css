@@ -80,7 +80,7 @@ html{
     text-align: right;
 }
 
-.bill__input-top, .bill__input-bottom{
+.bill__input{
     position: relative;
 }
 
@@ -137,4 +137,40 @@ html{
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     text-transform: uppercase;
+}
+
+@media (min-width: 668px){
+    .title{
+        margin-top: 100px;
+    }
+
+    .calculator{
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        width: 670px;
+    }
+
+    .bill{
+        width: 48%;
+    }
+
+    .bill__percentage-container{
+        text-align: left;
+        width: 100%;
+    }
+
+    .bill__percentage{
+        width: 86px;
+    }
+
+    .result{
+        width: 50%;
+    }
+
+    .result__reset{
+        position: relative;
+        bottom: -30px;
+    }
 }
