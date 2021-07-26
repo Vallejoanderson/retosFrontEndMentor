@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -118,9 +118,9 @@ html{
 }
 
 .result__section{
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .result__section-display{
