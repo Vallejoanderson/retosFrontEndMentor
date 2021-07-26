@@ -3,10 +3,13 @@
 }
 
 :root{
+    --buttonhover: #9fe8df;
     --darkgraycyan: hsl(186, 14%, 43%);
     --darkgraycyantwo: hsl(184, 14%, 56%);
     --lightgraycyan: hsl(185, 41%, 84%);
     --lightgraycyantwo: hsl(189, 41%, 97%);
+    --strongcyan: hsl(172, 67%, 45%);
+    --transpcyan: hsl(172, 67%, 45%, .2);
     --verydarkcyan: hsl(183, 100%, 15%);
     --white: hsl(0, 0%, 100%);
 }
@@ -39,6 +42,10 @@ html{
     width: 100%;
 }
 
+.bill__input{
+    position: relative;
+}
+
 .bill__subtitle{
     color: var(--darkgraycyantwo);
     font-size: 0.5rem;
@@ -51,16 +58,23 @@ html{
     background-color: var(--lightgraycyantwo);
     border: 1px solid var(--lightgraycyantwo);
     border-radius: 5px;
-    color: var(--darkgraycyantwo);
+    color: var(--verydarkcyan);
+    cursor: pointer;
+    font-weight: 700;
     height: 35px;
     text-align: right;
     width: 100%;
+}
+
+.input[type=number]{
+    -moz-appearance: textfield;
 }
 
 .bill__percentage{
     background-color: var(--verydarkcyan);
     border-radius: 5px;
     color: var(--white);
+    cursor: pointer;
     display: inline-block;
     font-size: 0.8rem;
     font-weight: 700;
@@ -72,16 +86,21 @@ html{
     width: 139px;
 }
 
+.bill__percentage:active{
+    background-color: white;
+}
+
 .custom{
     background-color: var(--lightgraycyantwo);
     border: 1px solid var(--lightgraycyantwo);
+    caret-color: var(--strongcyan);
     color: var(--verydarkcyan);
     padding-right: .5rem;
     text-align: right;
 }
 
-.bill__input{
-    position: relative;
+.custom:focus, .input-bill:focus{
+    border: 2px solid var(--strongcyan);
 }
 
 .icon{
@@ -105,7 +124,7 @@ html{
 }
 
 .result__section-display{
-    color: hsl(172, 67%, 45%);
+    color: var(--strongcyan);
     font-size: 1.5rem;
     font-weight: 700;
     margin-top: 0;
@@ -129,9 +148,10 @@ html{
 }
 
 .result__reset{
-    background-color: hsl(172, 67%, 45%, .2);
+    background-color: var(--transpcyan);
     border-radius: 5px;
-    color: hsl(183, 100%, 15%);
+    color: var(--verydarkcyan);
+    cursor: pointer;
     font-size: 0.7rem;
     margin: 2.4rem auto 0 auto;
     padding-top: 0.3rem;
@@ -172,5 +192,14 @@ html{
     .result__reset{
         position: relative;
         bottom: -30px;
+    }
+
+    .result__reset:hover, .bill__percentage:hover{
+        background-color: var(--buttonhover);
+        color: var(--verydarkcyan);
+    }
+
+    .custom:hover{
+      background-color: var(--lightgraycyantwo);
     }
 }
