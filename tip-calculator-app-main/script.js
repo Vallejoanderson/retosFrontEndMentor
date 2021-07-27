@@ -2,6 +2,8 @@ const bill__input = document.getElementById('bill');
 const people__input = document.getElementById('people');
 const error = document.querySelector('.error__div');
 const btns = document.querySelectorAll('.bill__percentage');
+const tip = document.getElementById('tipamount');
+const total = document.getElementById('total');
 
 bill__input.addEventListener('input', function(){
     let bill = bill__input.value;
@@ -12,7 +14,7 @@ bill__input.addEventListener('input', function(){
     }
 });
 
-function evaluatePeople(){ /* Check number of people */
+function evaluatePeople(){ // Check number of people 
     people = people__input.value;
     if( people == 0 ){
         error.classList.add('error__div-show');
@@ -22,12 +24,19 @@ function evaluatePeople(){ /* Check number of people */
     }
 }
 
-btns.forEach(function(btn){
+btns.forEach(function(btn){ //Calculate percentages
     btn.addEventListener('click', function(){
-        if ( btn.classList.contains("five") ){
-            console.log('Hello');
-            individualBill(5);
+        switch(btn.textContent){
+            case('5%'):
+                individualBill(15); 
+            break;
         }
     });
 });
 
+function individualBill(number){
+    let bill = bill__input.value;
+    let people = people__input.value;
+    tip.textContent = `$${( number/100*bill/people ).toFixed(2)}`;
+    total.textContent = `$${( (bill * (number/100+1))/people ).toFixed(2)}`;
+}

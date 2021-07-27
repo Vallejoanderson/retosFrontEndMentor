@@ -20,8 +20,7 @@
     <div class="bill">
       <p class="bill__subtitle">Bill</p>
       <div class="bill__input">
-        <input class="input input-bill" type="number" id="bill" name="bill" 
-            minlength="4" placeholder="0" maxlength="8" size="10">
+        <input class="input input-bill" type="number" id="bill" name="bill" placeholder="0" maxlength="4">
         <i class="icon fas fa-dollar-sign fa-xs"></i>
       </div>
       <p class="bill__subtitle">Select Tip %</p>
@@ -50,7 +49,7 @@
             / person
           </span>
         </p>
-        <p class="result__section-display">$0.00</p>
+        <p class="result__section-display" id="tipamount">$0.00</p>
       </div>
       <div class="result__section">
         <p class="result__section-text">Total
@@ -58,7 +57,7 @@
             / person
           </span>
         </p>
-        <p class="result__section-display">$0.00</p>
+        <p class="result__section-display" id="total">$0.00</p>
       </div>
       <div class="result__reset">Reset</div>
     </div>
