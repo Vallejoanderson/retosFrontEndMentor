@@ -54,6 +54,18 @@ html{
     text-align: left;
 }
 
+.error__div{
+    color: rgb(240, 144, 135);
+    display: none;
+    font-size: .5rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+.error__div-show{
+    display: block;
+}
+
 .input{
     background-color: var(--lightgraycyantwo);
     border: 1px solid var(--lightgraycyantwo);

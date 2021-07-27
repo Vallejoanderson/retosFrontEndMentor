@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/syles-dist.css">
+  <link rel="stylesheet" href="css/syles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
@@ -35,6 +35,7 @@
         minlength="4" placeholder="Custom" maxlength="2" size="2">
       </div>
       <p class="bill__subtitle">Number of People</p>
+      <p class="error__div">Can't be zero</p>
       <div class="bill__input">
         <input class="input" type="number" id="people" name="people" 
             minlength="4" placeholder="0" maxlength="8" size="10">
@@ -62,5 +63,6 @@
       <div class="result__reset">Reset</div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
