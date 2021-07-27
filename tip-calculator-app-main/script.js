@@ -21,3 +21,13 @@ function evaluatePeople(){ /* Check number of people */
         error.classList.remove('error__div-show');
     }
 }
+
+btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+        if ( btn.classList.contains("five") ){
+            console.log('Hello');
+            individualBill(5);
+        }
+    });
+});
+
