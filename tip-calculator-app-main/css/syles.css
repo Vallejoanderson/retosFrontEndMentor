@@ -102,10 +102,6 @@ html{
     width: 139px;
 }
 
-.bill__percentage--status-active{
-    background-color: var(--strongcyan);
-}
-
 .custom{
     background-color: var(--lightgraycyantwo);
     border: 1px solid var(--lightgraycyantwo);
@@ -115,7 +111,7 @@ html{
     text-align: right;
 }
 
-.custom:focus, .input-bill:focus{
+.custom:focus, .input:focus{
     border: 2px solid var(--strongcyan);
 }
 
@@ -174,6 +170,11 @@ html{
     padding-bottom: 0.3rem;
     text-transform: uppercase;
 }
+
+.button--status-active{
+    background-color: var(--strongcyan);
+}
+
 
 @media (min-width: 668px){
     .title{
