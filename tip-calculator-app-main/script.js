@@ -2,6 +2,7 @@ const bill__input = document.getElementById('bill');
 const people__input = document.getElementById('people');
 const error = document.querySelector('.error__div');
 const btns = document.querySelectorAll('.bill__percentage');
+const customPercentage = document.querySelector('.custom');
 const tip = document.getElementById('tipamount');
 const total = document.getElementById('total');
 const reset = document.querySelector('.result__reset');
@@ -23,21 +24,27 @@ function individualBill(number = 1){ //Calculate tip and total bill for each per
     total.textContent = `$${( (bill * (number/100+1))/people ).toFixed(2)}`;
 }
 
-bill__input.addEventListener('input', function(){
+bill__input.addEventListener('input', function(){ 
     let bill = bill__input.value;
     let people = people__input.value;
     evaluatePeople();
     people__input.addEventListener('input', evaluatePeople);
 });
 
-btns.forEach(function(btn){ //Calculate percentages
+btns.forEach(function(btn){ //Calculate percentages according to each button clicked
     people = people__input.value;
     btn.addEventListener('click', function(){
+        btns.forEach(function(btnAux){ // If we click in another button the rest get removed his active color class
+        if( btn !==  btnAux){
+            btnAux.classList.remove('bill__percentage--status-active');
+            }
+        });
+            btn.classList.add('bill__percentage--status-active');
         if( people != 0 && people != '' ) //Prevent to calculate if there is no people
         {
             switch(btn.textContent){
                 case('5%'):
-                    individualBill(5); 
+                    individualBill(5);
                     break;
                 case('10%'):
                     individualBill(10); 
@@ -66,9 +73,5 @@ reset.addEventListener('click', function(){ // Reset button
     people__input.value = '';
     tip.textContent = '$0.00';
     total.textContent = '$0.00';
+    customPercentage.value = '';
 });
-
-
-
-
-

@@ -102,8 +102,8 @@ html{
     width: 139px;
 }
 
-.bill__percentage:active{
-    background-color: white;
+.bill__percentage--status-active{
+    background-color: var(--strongcyan);
 }
 
 .custom{
