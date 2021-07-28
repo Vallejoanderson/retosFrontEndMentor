@@ -50,8 +50,12 @@ html{
     color: var(--darkgraycyantwo);
     font-size: 0.5rem;
     font-weight: 600;
-    margin-top: 25px;
     text-align: left;
+}
+
+.people__paragraph{
+    display: flex;
+    justify-content: space-between;
 }
 
 .error__div{
@@ -203,7 +207,6 @@ html{
 
     .result__reset{
         position: relative;
-        bottom: -30px;
     }
 
     .result__reset:hover, .bill__percentage:hover{

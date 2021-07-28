@@ -63,8 +63,9 @@ btns.forEach(function(btn){ //Calculate percentages
 
 reset.addEventListener('click', function(){ // Reset button
     bill__input.value = '';
-    individualBill();
     people__input.value = '';
+    tip.textContent = '$0.00';
+    total.textContent = '$0.00';
 });
 
 
