@@ -7,7 +7,14 @@
 }
 
 .main__title {
-  font-size: 1.1rem;
+  color: #293356;
+  font-size: 1.2rem;
+}
+.main__title .main__title-sub {
+  color: #858fad;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .container {

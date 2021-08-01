@@ -19,7 +19,14 @@ $darkblue: hsl(227, 35%, 25%);
 }
 
 .main__title{
-	font-size: 1.1rem;
+	color: $darkblue;
+	font-size: 1.2rem;
+	#{&}-sub {
+		color: $grayblue;
+		display: block;
+		font-size: .8rem;
+		font-weight: 600;
+	}
 }
 
 .container{
