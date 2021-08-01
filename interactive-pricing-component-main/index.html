@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Interactive pricing component</title>
 </head>
-<body>
+<body class="body">
   <h1 class="main__title">Simple, traffic-based pricing
     <span class="main__title-sub">Sign-up for our 30-day trial.</span>
     <span class="main__title-sub">No credit card required.</span>
@@ -15,7 +19,7 @@
     <div class="views">
       <h2 class="views__amount">Pageviews</h2>
       <input type="range" id="volume" name="volume"
-      min="0" max="10">
+      min="0" max="11">
       <p class="fee"><span class="price">$</span><span class="period">/month</span></p>
     </div>
     <p class="month__price">Monthly Billing</p>

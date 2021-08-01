@@ -1,0 +1,30 @@
+/* Color */
+$softcyan: hsl(174, 77%, 80%);
+$strongcyan: hsl(174, 86%, 45%);
+$lightgrayred: hsl(14, 92%, 95%);
+$lightred: hsl(15, 100%, 70%);
+$paleblue: hsl(226, 100%, 87%);
+$white: hsl(0, 0%, 100%);
+$verypaleblue: hsl(230, 100%, 99%);
+$lightgrayblue: hsl(224, 65%, 95%);
+$lighttoggleblue: hsl(223, 50%, 87%);
+$grayblue: hsl(225, 20%, 60%);
+$darkblue: hsl(227, 35%, 25%);
+
+.body{
+	background-color: $verypaleblue;
+	font-family: 'Manrope', sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+
+.main__title{
+	font-size: 1.1rem;
+}
+
+.container{
+	background-color: $white;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
