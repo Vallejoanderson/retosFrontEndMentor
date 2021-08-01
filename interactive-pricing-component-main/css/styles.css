@@ -1,6 +1,10 @@
-/* Color */
+/* Colors */
 .body {
+  background: url(../images/pattern-circles.svg);
   background-color: #fafbff;
+  background-position: top 3.3rem left 50%;
+  background-repeat: no-repeat;
+  background-size: 35%;
   font-family: "Manrope", sans-serif;
   font-size: 15px;
   text-align: center;
@@ -8,18 +12,35 @@
 
 .main__title {
   color: #293356;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  margin-top: 5rem;
 }
 .main__title .main__title-sub {
   color: #858fad;
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 600;
+  margin-top: 0.1rem;
 }
 
 .container {
   background-color: white;
+  border-radius: 5px;
+  color: #858fad;
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+}
+
+.fee__price {
+  color: #293356;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.trial__advantages {
+  list-style-image: url(../images/icon-check.svg);
 }
