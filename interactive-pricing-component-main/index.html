@@ -18,14 +18,16 @@
   <div class="container">
     <div class="views">
       <h2 class="views__amount">100K Pageviews</h2>
-      <input type="range" id="volume" name=""
-      min="0" max="11">
+      <label class="slider"></label>
+      <input type="range" id="slider" name="slider" min="0" value="0" max="100">
       <p class="fee"><span class="fee__price">$16.00</span><span class="fee__period"> / month</span></p>
     </div>
     <p class="permonth">Monthly Billing</p>
-    <label class="switch">
-      <input type="checkbox" /><div></div>
-    </label>
+    <div class="button">
+      <label class="switch">
+        <input id="checkbox" type="checkbox"/><div></div>
+      </label>
+    </div>
     <p class="peryear">Yearly Billing<span class="peryear__discount">-25%</span></p>
     <div class="trial">
       <ul class="trial__advantages">
@@ -36,5 +38,6 @@
       <div class="trial__button">Start my trial</div>
     </div>
   </div>
+  <script src="script/main.js"></script>
 </body>
 </html>

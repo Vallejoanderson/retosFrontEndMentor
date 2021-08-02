@@ -62,8 +62,9 @@ $darkblue: hsl(227, 35%, 25%);
 	font-weight: 800;
 }
 
-.permonth, .button-switch, .peryear{
+.permonth, .button,.peryear{
 	display: inline-block;
+	padding-right: .5rem;
 }
 
 .peryear__discount{
@@ -98,11 +99,6 @@ $darkblue: hsl(227, 35%, 25%);
 
 /* Switch button */
 
-.switch input {
-  position: absolute;
-  opacity: 0;
-}
-
 /** Switch
  -------------------------------------*/
 
@@ -120,15 +116,17 @@ $darkblue: hsl(227, 35%, 25%);
   font-size: 20px; /* 1 */
   height: 1em;
   width: 2em;
-  background-color: #BDB9A6;
+  background-color: $lighttoggleblue;
   border-radius: 1em;
+	position: relative;
+	top: 6px;
 }
 
 .switch div {
   height: .8em;
   width: .8em;
   border-radius: 1em;
-  background: #FFF;
+  background: $white;
   box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
   -webkit-transition: all 300ms;
      -moz-transition: all 300ms;
@@ -139,8 +137,10 @@ $darkblue: hsl(227, 35%, 25%);
 }
 
 .switch input:checked + div {
-	background-color: #000;
+	background-color: $white;
   -webkit-transform: translate3d(110%, 0, 0);
      -moz-transform: translate3d(110%, 0, 0);
           transform: translate3d(110%, 0, 0);
 }
+
+//End of Swicth

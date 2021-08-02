@@ -51,8 +51,9 @@
   font-weight: 800;
 }
 
-.permonth, .button-switch, .peryear {
+.permonth, .button, .peryear {
   display: inline-block;
+  padding-right: 0.5rem;
 }
 
 .peryear__discount {
@@ -86,11 +87,6 @@
 }
 
 /* Switch button */
-.switch input {
-  position: absolute;
-  opacity: 0;
-}
-
 /** Switch
  -------------------------------------*/
 .switch input {
@@ -107,15 +103,17 @@
   /* 1 */
   height: 1em;
   width: 2em;
-  background-color: #BDB9A6;
+  background-color: #cdd7ee;
   border-radius: 1em;
+  position: relative;
+  top: 6px;
 }
 
 .switch div {
   height: 0.8em;
   width: 0.8em;
   border-radius: 1em;
-  background: #FFF;
+  background: white;
   -webkit-box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
           box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
   -webkit-transition: all 300ms;
@@ -126,7 +124,7 @@
 }
 
 .switch input:checked + div {
-  background-color: #000;
+  background-color: white;
   -webkit-transform: translate3d(110%, 0, 0);
   transform: translate3d(110%, 0, 0);
 }
