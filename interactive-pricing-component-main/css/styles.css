@@ -1,10 +1,10 @@
 /* Colors */
 .body {
-  background: url(../images/pattern-circles.svg);
+  background: url(../images/pattern-circles.svg), url(../images/bg-pattern.svg);
   background-color: #fafbff;
-  background-position: top 3.3rem left 50%;
+  background-position: top 3.3rem left 50%, top 0 left 0;
   background-repeat: no-repeat;
-  background-size: 35%;
+  background-size: 35%, auto 20rem;
   font-family: "Manrope", sans-serif;
   font-size: 15px;
   text-align: center;
@@ -26,13 +26,23 @@
 .container {
   background-color: white;
   border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 2px #ebe9e9;
+          box-shadow: 1px 1px 2px #ebe9e9;
   color: #858fad;
   font-weight: 600;
   font-size: 0.7rem;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1.7rem;
   width: 90%;
+}
+
+.views__amount {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .fee__price {
@@ -41,6 +51,36 @@
   font-weight: 800;
 }
 
+.permonth, .checkbox, .peryear {
+  display: inline-block;
+}
+
+.peryear__discount {
+  background-color: #feece7;
+  border-radius: 10px;
+  color: #ff8c66;
+  padding: 2px 5px;
+}
+
 .trial__advantages {
   list-style-image: url(../images/icon-check.svg);
+  list-style-position: outside;
+  padding-left: 0;
+}
+
+.advantage {
+  line-height: 2;
+  padding-left: 0.7rem;
+}
+
+.trial__button {
+  background-color: #293356;
+  border-radius: 25px;
+  color: #bdccff;
+  font-size: 0.7rem;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px;
+  width: 100px;
 }
