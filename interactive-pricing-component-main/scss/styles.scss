@@ -11,19 +11,15 @@ $lighttoggleblue: hsl(223, 50%, 87%);
 $grayblue: hsl(225, 20%, 60%);
 $darkblue: hsl(227, 35%, 25%);
 
-@mixin thumb-properties {
-	background: url(../images/icon-slider.svg);
-	background-color: $strongcyan;
-	background-position: center;
-	background-repeat: no-repeat;
-  border: 1px solid $strongcyan;
-	border-radius: 2rem;
-	box-shadow: 1px 1px 20px $strongcyan, 0 0 0 $strongcyan, -40px 0 0 $strongcyan, -85px 0 0 $strongcyan, -130px 0 0 $strongcyan,
-      -175px 0 0 $strongcyan, -220px 0 0 $strongcyan, -265px 0 0 $strongcyan, -310px 0 0 $strongcyan,
-      -350px 0 0 $strongcyan, -390px 0 0 $strongcyan, -409px 0 0 $strongcyan;
+@mixin thumb-properties{
+	background: url(../images/icon-slider.svg) no-repeat center;
+  background-color: hsl(174, 86%, 45%);
+  border: none;
+	border-radius: 2.6em;
+  box-shadow: 1px 1px 15px hsl(174, 86%, 45%);
 	cursor: pointer;
-  height: 2rem;
-  width: 2rem;
+	height: 2.6em;
+	width: 2.6em;
 }
 
 .body{
@@ -68,6 +64,7 @@ $darkblue: hsl(227, 35%, 25%);
 .views__amount{
 	font-size: .7rem;
 	letter-spacing: 1px;
+	margin-bottom: 1.5rem;
 	text-transform: uppercase;
 }
 
@@ -77,7 +74,7 @@ $darkblue: hsl(227, 35%, 25%);
 	font-weight: 800;
 }
 
-.permonth, .button,.peryear{
+.permonth, .button, .peryear{
 	display: inline-block;
 	padding-right: .5rem;
 }
@@ -89,18 +86,14 @@ $darkblue: hsl(227, 35%, 25%);
 	padding: 2px 5px;
 }
 
-.trial__advantages{
+.trial{
+	margin-top: 2.7rem;
+	#{&}__advantages{
 	list-style-image: url(../images/icon-check.svg);
 	list-style-position: outside;
 	padding-left: 0;
-}
-
-.advantage{
-	line-height: 2;
-	padding-left: .7rem;
-}
-
-.trial__button{
+	}
+	#{&}__button{
 	background-color: $darkblue;
 	border-radius: 25px;
 	color: $paleblue;
@@ -110,114 +103,109 @@ $darkblue: hsl(227, 35%, 25%);
 	margin-right: auto;
 	padding: 10px 30px;
 	width: 100px;
+	}
 }
 
-/* Switch button */
+.advantage{
+	line-height: 2;
+	padding-left: .7rem;
+}
 
-/** Switch
+//Input range styling properties
+
+/*generated with Input range slider CSS style generator (version 20210711)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].styled-slider {
+  height: 2.2em;
+	width: 80%;
+  -webkit-appearance: none;
+}
+
+/*progress support*/
+input[type=range].styled-slider.slider-progress {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 2.3em + var(--ratio) * (100% - 2.3em));
+}
+
+/*webkit*/
+input[type=range].styled-slider::-webkit-slider-thumb {
+  @include thumb-properties;
+  margin-top: calc(.7em * 0.5 - 2.3em * 0.5);
+  -webkit-appearance: none;
+}
+
+input[type=range].styled-slider::-webkit-slider-runnable-track {
+  height: .7em;
+  border-radius: 0.5em;
+  background: hsl(224, 65%, 95%);
+  border: none;
+  box-shadow: none;
+}
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+  background: linear-gradient(hsl(174, 77%, 80%),hsl(174, 77%, 80%)) 0/var(--sx) 100% no-repeat, hsl(224, 65%, 95%);
+}
+
+/*mozilla*/
+input[type=range].styled-slider::-moz-range-thumb {
+	@include thumb-properties();
+}
+
+input[type=range].styled-slider::-moz-range-track {
+  height: .7em;
+  border-radius: 0.5em;
+  background: hsl(224, 65%, 95%);
+  border: none;
+  box-shadow: none;
+}
+
+input[type=range].styled-slider.slider-progress::-moz-range-track {
+  background: linear-gradient(hsl(174, 77%, 80%),hsl(174, 77%, 80%)) 0/var(--sx) 100% no-repeat, hsl(224, 65%, 95%);
+}
+
+/*ms*/
+input[type=range].styled-slider::-ms-fill-upper {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-fill-lower {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-thumb {
+  @include thumb-properties();
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+input[type=range].styled-slider::-ms-track {
+  height: .7em;
+  border-radius: 0.5em;
+  background: hsl(224, 65%, 95%);
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+  height: .7em;
+  border-radius: 0.5em 0 0 0.5em;
+  margin: -undefined 0 -undefined -undefined;
+  background: hsl(174, 77%, 80%);
+  border: none;
+  border-right-width: 0;
+}
+
+//End Input range styling properties
+
+/** Switch Styling properties
  -------------------------------------*/
 
 .switch input {
   position: absolute;
   opacity: 0;
-}
-
-/* Range input styling */
-
-input[type=range] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 100%; /* Specific width is required for Firefox. */
-  background: transparent; /* Otherwise white in Chrome */
-}
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}
-
-input[type=range]:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-}
-
-input[type=range]::-ms-track {
-  width: 100%;
-  cursor: pointer;
-
-  /* Hides the slider so custom styles can be added */
-  background: transparent; 
-  border-color: transparent;
-  color: transparent;
-}
-
-//Styling the thumb
-
-/* Special styling for WebKit/Blink */
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-	@include thumb-properties();
-  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-}
-
-/* All the same stuff for Firefox */
-input[type=range]::-moz-range-thumb {
-	@include thumb-properties();
-}
-
-/* All the same stuff for IE */
-input[type=range]::-ms-thumb {
-  @include thumb-properties();
-}
-
-/*Styling the track*/
-
-input[type=range]::-webkit-slider-runnable-track {
-  width: 80%;
-  height: 1rem;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
-  border-radius: 1rem;
-  border: 0.2px solid #010101;
-}
-
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #367ebd;
-}
-
-input[type=range]::-moz-range-track {
-  width: 80%;
-  height: .5rem;
-  cursor: pointer;  
-	background: $lightgrayblue;
-  border-radius: .5rem;
-}
-
-input[type=range]::-ms-track {
-  width: 80%;
-  height: 8.4px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px 0;
-  color: transparent;
-}
-input[type=range]::-ms-fill-lower {
-  background: #2a6495;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-input[type=range]:focus::-ms-fill-lower {
-  background: #3071a9;
-}
-input[type=range]::-ms-fill-upper {
-  background: #3071a9;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-
-input[type=range]:focus::-ms-fill-upper {
-  background: #367ebd;
 }
 
 /**
@@ -257,5 +245,5 @@ input[type=range]:focus::-ms-fill-upper {
           transform: translate3d(110%, 0, 0);
 }
 
-//End of Swicth
+//End Switch Styling properties
 
