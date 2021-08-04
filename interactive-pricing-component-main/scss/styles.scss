@@ -10,13 +10,14 @@ $lightgrayblue: hsl(224, 65%, 95%);
 $lighttoggleblue: hsl(223, 50%, 87%);
 $grayblue: hsl(225, 20%, 60%);
 $darkblue: hsl(227, 35%, 25%);
+$lightgray: rgb(233, 225, 225);
 
 @mixin thumb-properties{
 	background: url(../images/icon-slider.svg) no-repeat center;
-  background-color: hsl(174, 86%, 45%);
+  background-color: $strongcyan;
   border: none;
 	border-radius: 2.6em;
-  box-shadow: 1px 1px 15px hsl(174, 86%, 45%);
+  box-shadow: 1px 1px 15px $strongcyan;
 	cursor: pointer;
 	height: 2.6em;
 	width: 2.6em;
@@ -27,7 +28,7 @@ $darkblue: hsl(227, 35%, 25%);
 	background-color: $verypaleblue;
 	background-position: top 3.3rem left 50%, top 0 left 0;
 	background-repeat: no-repeat;
-	background-size: 35%, auto 20rem;
+	background-size: 8rem, auto 20rem;
 	font-family: 'Manrope', sans-serif;
 	font-size: 15px;
 	text-align: center;
@@ -49,7 +50,7 @@ $darkblue: hsl(227, 35%, 25%);
 .container{
 	background-color: $white;
 	border-radius: 5px;
-	box-shadow: 1px 1px 2px rgb(235, 233, 233);
+	box-shadow: 1px 2px 2px $lightgray, -1px 0 2px $lightgray;
 	color: $grayblue;
 	font-weight: 600;
 	font-size: .7rem;
@@ -59,6 +60,9 @@ $darkblue: hsl(227, 35%, 25%);
 	padding-top: 1rem;
 	padding-bottom: 1.7rem;
 	width: 90%;
+	@media (min-width: 420px){
+		width: 420px;
+	}
 }
 
 .views__amount{
@@ -111,6 +115,30 @@ $darkblue: hsl(227, 35%, 25%);
 	padding-left: .7rem;
 }
 
+@media (min-width: 420px){ /*Change behaviour top section for desktop version*/
+	.views{
+		display: grid;
+		grid-template-areas: "title price"
+												"slider slider";
+	}
+
+	.views__amount{
+		grid-area: title;
+		padding-top: 1rem;
+	}
+
+	.fee{
+		grid-area: price;
+	}
+
+	.styled-slider{
+		grid-area: slider;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
 //Input range styling properties
 
 /*generated with Input range slider CSS style generator (version 20210711)
@@ -138,12 +166,12 @@ input[type=range].styled-slider::-webkit-slider-thumb {
 input[type=range].styled-slider::-webkit-slider-runnable-track {
   height: .7em;
   border-radius: 0.5em;
-  background: hsl(224, 65%, 95%);
+  background: $lightgrayblue;
   border: none;
   box-shadow: none;
 }
 input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
-  background: linear-gradient(hsl(174, 77%, 80%),hsl(174, 77%, 80%)) 0/var(--sx) 100% no-repeat, hsl(224, 65%, 95%);
+  background: linear-gradient($softcyan,$softcyan) 0/var(--sx) 100% no-repeat, $lightgrayblue;
 }
 
 /*mozilla*/
@@ -154,13 +182,13 @@ input[type=range].styled-slider::-moz-range-thumb {
 input[type=range].styled-slider::-moz-range-track {
   height: .7em;
   border-radius: 0.5em;
-  background: hsl(224, 65%, 95%);
+  background: $lightgrayblue;
   border: none;
   box-shadow: none;
 }
 
 input[type=range].styled-slider.slider-progress::-moz-range-track {
-  background: linear-gradient(hsl(174, 77%, 80%),hsl(174, 77%, 80%)) 0/var(--sx) 100% no-repeat, hsl(224, 65%, 95%);
+  background: linear-gradient($softcyan,$softcyan) 0/var(--sx) 100% no-repeat, $lightgrayblue;
 }
 
 /*ms*/
@@ -183,7 +211,7 @@ input[type=range].styled-slider::-ms-thumb {
 input[type=range].styled-slider::-ms-track {
   height: .7em;
   border-radius: 0.5em;
-  background: hsl(224, 65%, 95%);
+  background: $lightgrayblue;
   border: none;
   box-shadow: none;
   box-sizing: border-box;
@@ -193,7 +221,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   height: .7em;
   border-radius: 0.5em 0 0 0.5em;
   margin: -undefined 0 -undefined -undefined;
-  background: hsl(174, 77%, 80%);
+  background: $softcyan;
   border: none;
   border-right-width: 0;
 }
@@ -222,6 +250,9 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   border-radius: 1em;
 	position: relative;
 	top: 6px;
+	&:hover{
+		background-color: $strongcyan;
+	}
 }
 
 .switch div {
@@ -229,7 +260,6 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   width: .8em;
   border-radius: 1em;
   background: $white;
-  box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
   -webkit-transition: all 300ms;
      -moz-transition: all 300ms;
           transition: all 300ms;

@@ -4,7 +4,7 @@
   background-color: #fafbff;
   background-position: top 3.3rem left 50%, top 0 left 0;
   background-repeat: no-repeat;
-  background-size: 35%, auto 20rem;
+  background-size: 8rem, auto 20rem;
   font-family: "Manrope", sans-serif;
   font-size: 15px;
   text-align: center;
@@ -26,8 +26,8 @@
 .container {
   background-color: white;
   border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 2px #ebe9e9;
-          box-shadow: 1px 1px 2px #ebe9e9;
+  -webkit-box-shadow: 1px 2px 2px #e9e1e1, -1px 0 2px #e9e1e1;
+          box-shadow: 1px 2px 2px #e9e1e1, -1px 0 2px #e9e1e1;
   color: #858fad;
   font-weight: 600;
   font-size: 0.7rem;
@@ -37,6 +37,11 @@
   padding-top: 1rem;
   padding-bottom: 1.7rem;
   width: 90%;
+}
+@media (min-width: 420px) {
+  .container {
+    width: 420px;
+  }
 }
 
 .views__amount {
@@ -89,6 +94,45 @@
   padding-left: 0.7rem;
 }
 
+@media (min-width: 420px) {
+  /*Change behaviour top section for desktop version*/
+  .views {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "title price" "slider slider";
+  }
+
+  .views__amount {
+    grid-area: title;
+    padding-top: 1rem;
+  }
+
+  .fee {
+    grid-area: price;
+  }
+
+  .styled-slider {
+    grid-area: slider;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 420px) {
+  .views__amount {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .fee {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .styled-slider {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+}
 /*generated with Input range slider CSS style generator (version 20210711)
 https://toughengineer.github.io/demo/slider-styler*/
 input[type=range].styled-slider {
@@ -221,14 +265,15 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   position: relative;
   top: 6px;
 }
+.switch:hover {
+  background-color: #10d5c2;
+}
 
 .switch div {
   height: 0.8em;
   width: 0.8em;
   border-radius: 1em;
   background: white;
-  -webkit-box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
   -webkit-transition: all 300ms;
   transition: all 300ms;
   position: relative;
