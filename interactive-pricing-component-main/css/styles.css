@@ -4,7 +4,7 @@
   background-color: #fafbff;
   background-position: top 3.3rem left 50%, top 0 left 0;
   background-repeat: no-repeat;
-  background-size: 8rem, auto 20rem;
+  background-size: 8rem, 100% 20rem;
   font-family: "Manrope", sans-serif;
   font-size: 15px;
   text-align: center;
@@ -44,7 +44,10 @@
   }
 }
 
-.views__amount {
+.views {
+  margin-bottom: 1rem;
+}
+.views .views__amount {
   font-size: 0.7rem;
   letter-spacing: 1px;
   margin-bottom: 1.5rem;
@@ -81,12 +84,16 @@
   background-color: #293356;
   border-radius: 25px;
   color: #bdccff;
+  cursor: pointer;
+  display: inline-block;
   font-size: 0.7rem;
   margin-top: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 30px;
-  width: 100px;
+}
+.trial .trial__button:hover {
+  color: white;
 }
 
 .advantage {
@@ -115,6 +122,14 @@
     grid-area: slider;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .trial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -162,6 +177,9 @@ input[type=range].styled-slider::-webkit-slider-thumb {
   margin-top: calc(.7em * 0.5 - 2.3em * 0.5);
   -webkit-appearance: none;
 }
+input[type=range].styled-slider::-webkit-slider-thumb:active {
+  background-color: #21ada0;
+}
 
 input[type=range].styled-slider::-webkit-slider-runnable-track {
   height: 0.7em;
@@ -187,6 +205,9 @@ input[type=range].styled-slider::-moz-range-thumb {
   cursor: pointer;
   height: 2.6em;
   width: 2.6em;
+}
+input[type=range].styled-slider::-moz-range-thumb:active {
+  background-color: #21ada0;
 }
 
 input[type=range].styled-slider::-moz-range-track {
@@ -223,6 +244,9 @@ input[type=range].styled-slider::-ms-thumb {
   width: 2.6em;
   margin-top: 0;
   box-sizing: border-box;
+}
+input[type=range].styled-slider::-ms-thumb:active {
+  background-color: #21ada0;
 }
 
 input[type=range].styled-slider::-ms-track {
@@ -267,6 +291,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 }
 .switch:hover {
   background-color: #10d5c2;
+  cursor: pointer;
 }
 
 .switch div {

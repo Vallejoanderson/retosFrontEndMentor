@@ -11,16 +11,17 @@ $lighttoggleblue: hsl(223, 50%, 87%);
 $grayblue: hsl(225, 20%, 60%);
 $darkblue: hsl(227, 35%, 25%);
 $lightgray: rgb(233, 225, 225);
+$activecyan: #21ada0;
 
 @mixin thumb-properties{
-	background: url(../images/icon-slider.svg) no-repeat center;
+  background: url(../images/icon-slider.svg) no-repeat center;
   background-color: $strongcyan;
   border: none;
-	border-radius: 2.6em;
+  border-radius: 2.6em;
   box-shadow: 1px 1px 15px $strongcyan;
-	cursor: pointer;
-	height: 2.6em;
-	width: 2.6em;
+  cursor: pointer;
+  height: 2.6em;
+  width: 2.6em;
 }
 
 .body{
@@ -28,7 +29,7 @@ $lightgray: rgb(233, 225, 225);
 	background-color: $verypaleblue;
 	background-position: top 3.3rem left 50%, top 0 left 0;
 	background-repeat: no-repeat;
-	background-size: 8rem, auto 20rem;
+	background-size: 8rem, 100% 20rem;
 	font-family: 'Manrope', sans-serif;
 	font-size: 15px;
 	text-align: center;
@@ -65,11 +66,14 @@ $lightgray: rgb(233, 225, 225);
 	}
 }
 
-.views__amount{
-	font-size: .7rem;
-	letter-spacing: 1px;
-	margin-bottom: 1.5rem;
-	text-transform: uppercase;
+.views{
+	margin-bottom: 1rem;
+	#{&}__amount{
+		font-size: .7rem;
+		letter-spacing: 1px;
+		margin-bottom: 1.5rem;
+		text-transform: uppercase;
+	}
 }
 
 .fee__price{
@@ -101,12 +105,16 @@ $lightgray: rgb(233, 225, 225);
 	background-color: $darkblue;
 	border-radius: 25px;
 	color: $paleblue;
+	cursor: pointer;
+	display: inline-block;
 	font-size: .7rem;
 	margin-top: 1.5rem;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px 30px;
-	width: 100px;
+	&:hover{
+		color: $white;
+	}
 	}
 }
 
@@ -119,7 +127,7 @@ $lightgray: rgb(233, 225, 225);
 	.views{
 		display: grid;
 		grid-template-areas: "title price"
-												"slider slider";
+							"slider slider";
 	}
 
 	.views__amount{
@@ -135,6 +143,11 @@ $lightgray: rgb(233, 225, 225);
 		grid-area: slider;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.trial{
+		display: flex;	
+		justify-content: space-around;
 	}
 }
 
@@ -158,9 +171,12 @@ input[type=range].styled-slider.slider-progress {
 
 /*webkit*/
 input[type=range].styled-slider::-webkit-slider-thumb {
-  @include thumb-properties;
+  @include thumb-properties();
   margin-top: calc(.7em * 0.5 - 2.3em * 0.5);
   -webkit-appearance: none;
+  &:active{
+	  background-color: $activecyan;
+  }
 }
 
 input[type=range].styled-slider::-webkit-slider-runnable-track {
@@ -177,6 +193,9 @@ input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
 /*mozilla*/
 input[type=range].styled-slider::-moz-range-thumb {
 	@include thumb-properties();
+	&:active{
+		background-color: $activecyan;
+	}
 }
 
 input[type=range].styled-slider::-moz-range-track {
@@ -206,6 +225,9 @@ input[type=range].styled-slider::-ms-thumb {
   @include thumb-properties();
   margin-top: 0;
   box-sizing: border-box;
+  &:active{
+	background-color: $activecyan;
+}
 }
 
 input[type=range].styled-slider::-ms-track {
@@ -240,19 +262,20 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
  * 1. Adjust this to size
  */
 
-.switch {
+.switch{
   display: inline-block;
-	cursor: pointer;
+  cursor: pointer;
   font-size: 20px; /* 1 */
   height: 1em;
   width: 2em;
   background-color: $lighttoggleblue;
   border-radius: 1em;
-	position: relative;
-	top: 6px;
-	&:hover{
-		background-color: $strongcyan;
-	}
+  position: relative;
+  top: 6px;
+  &:hover{
+	background-color: $strongcyan;
+	cursor: pointer;
+  }
 }
 
 .switch div {
