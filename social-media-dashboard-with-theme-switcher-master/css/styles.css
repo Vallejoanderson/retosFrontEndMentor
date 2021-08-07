@@ -1,0 +1,135 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #1e202a;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.followers {
+  text-align: center;
+}
+
+.card {
+  background-color: #252a41;
+  border-radius: 0.4rem;
+  margin-bottom: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  position: relative;
+  width: 95%;
+}
+.card .card__people {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+.card .card__tag {
+  color: #8b97c6;
+  letter-spacing: 0.4rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+.card .card__nick-text {
+  color: #8b97c6;
+  display: inline-block;
+  font-weight: 700;
+}
+.card .card__number {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+.card .card__nick-icon {
+  margin-right: 0.3rem;
+  position: relative;
+  top: 0.3rem;
+}
+.card .card__number-text {
+  display: inline-block;
+}
+.card .card__number-text--color-green {
+  color: #1db489;
+}
+.card .card__number-text--color-red {
+  color: #dc414c;
+}
+.card .card__number-icon {
+  margin-right: 0.1rem;
+  position: relative;
+  top: -0.15rem;
+}
+
+.card--topbordercolor-bluefb {
+  border-top: 0.3rem solid #198ff5;
+}
+
+.card--topbordercolor-bluetw {
+  border-top: 0.3rem solid #1ca0f2;
+}
+
+.card--topbordercolor-yellowig {
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(to right, #fdc468, #df4996);
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  height: 0.3rem;
+  inset: 0;
+  position: absolute;
+}
+
+.card--topbordercolor-red {
+  border-top: 0.3rem solid #c4032a;
+}
+
+/** Switch Styling properties
+ -------------------------------------*/
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+/**
+ * 1. Adjust this to size
+ */
+.switch {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  /* 1 */
+  height: 1em;
+  width: 2em;
+  background-color: #c4bfbf;
+  border-radius: 1em;
+  position: relative;
+  top: 6px;
+}
+.switch:hover {
+  background-color: #c4bfbf;
+  cursor: pointer;
+}
+
+.switch div {
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 1em;
+  background: black;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  position: relative;
+  top: 2px;
+  left: 3px;
+}
+
+.switch input:checked + div {
+  background-color: black;
+  -webkit-transform: translate3d(110%, 0, 0);
+  transform: translate3d(110%, 0, 0);
+}

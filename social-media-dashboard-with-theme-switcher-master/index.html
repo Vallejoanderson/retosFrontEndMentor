@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -25,75 +27,99 @@
       </label>
     </div>
   </nav>
-
   <section class="followers">
-    <div class="user">
-      <p class="user__nick">@nathanf</p>
-      <p class="user__people">1987</p>
-      <p class="user__tag">Followers</p>
-      <p class="user__number">12 Today</p>
+    <div class="card card--topbordercolor-bluefb">
+      <div class="card__nick">
+        <img class="card__nick-icon" src="/images/icon-facebook.svg" alt="">
+        <p class="card__nick-text">@nathanf</p>
+		  </div>
+      <p class="card__people">1987</p>
+      <p class="card__tag">Followers</p>
+      <div class="card__number">
+        <img class="card__number-icon" src="/images/icon-up.svg" alt="">
+        <p class="card__number-text">12 Today</p>
+      </div>
     </div>
-    <div class="user">
-      <p class="user__nick">@nathanf</p>
-      <p class="user__people">1044</p>
-      <p class="user__tag">Followers</p>
-      <p class="user__number">99 Today</p>
+    <div class="card card--topbordercolor-bluetw">
+      <div class="card__nick">
+        <img class="card__nick-icon" src="/images/icon-twitter.svg" alt="">
+        <p class="card__nick-text">@nathanf</p>
+		  </div>
+      <p class="card__people">1044</p>
+      <p class="card__tag">Followers</p>
+      <div class="card__number">
+        <img class="card__number-icon" src="/images/icon-up.svg" alt="">
+        <p class="card__number-text card__number-text--color-green">99 Today</p>
+      </div>
     </div>
-    <div class="user">
-      <p class="user__nick">@realnathanf</p>
-      <p class="user__people">11k</p>
-      <p class="user__tag">Followers</p>
-      <p class="user__number">1099 Today</p>
+    <div class="card ">
+      <div class="card--topbordercolor-yellowig"></div>
+      <div class="card__nick">
+        <img class="card__nick-icon" src="/images/icon-instagram.svg" alt="">
+        <p class="card__nick-text">@realnathanf</p>
+		  </div>
+      <p class="card__people">11k</p>
+      <p class="card__tag">Followers</p>
+      <div class="card__number">
+        <img class="card__number-icon" src="/images/icon-up.svg" alt="">
+        <p class="card__number-text card__number-text--color-green">1099 Today</p>
+      </div>
     </div>
-    <div class="user">
-      <p class="user__nick">Nathan F.</p>
-      <p class="user__people">8239</p>
-      <p class="user__tag">Subscribers</p>
-      <p class="user__number">144 Today</p>
+    <div class="card card--topbordercolor-red">
+       <div class="card__nick">
+        <img class="card__nick-icon" src="/images/icon-youtube.svg" alt="">
+        <p class="card__nick-text">Nathan F.</p>
+		  </div>
+      <p class="card__people">8239</p>
+      <p class="card__tag">Subscribers</p>
+      <div class="card__number">
+        <img class="card__number-icon" src="/images/icon-down.svg" alt="">
+        <p class="card__number-text card__number-text--color-red">144 Today</p>
+      </div>
     </div>
   </section>
 
   <h2>Overview - Today</h2>
   <section class="overview">
-    <div class="reaction">
-      <p class="reaction__typeof">Page Views</p>
-      <p class="reaction__people">87</p>
-      <p class="reaction__number">3%</p>
+    <div class="card card-topborder-">
+      <p class="card__nick-text">Page Views</p>
+      <p class="card__people">87</p>
+      <p class="card__number">3%</p>
     </div>
-    <div class="reaction">
-      <p class="reaction__typeof">Likes</p>
-      <p class="reaction__people">52</p>
-      <p class="reaction__number">2%</p>
+    <div class="card">
+      <p class="card__nick-text">Likes</p>
+      <p class="card__people">52</p>
+      <p class="card__number">2%</p>
     </div>
-    <div class="reaction">
-      <p class="reaction__typeof">Likes</p>
-      <p class="reaction__people">5462</p>
-      <p class="reaction__number">2257%</p>
+    <div class="card">
+      <p class="card__nick-text">Likes</p>
+      <p class="card__people">5462</p>
+      <p class="card__number">2257%</p>
     </div>
-    <div class="reaction">
-      <p class="reaction__typeof">Profile Views</p>
-      <p class="reaction__people">52k</p>
-      <p class="reaction__number">1375%</p>
+    <div class="card">
+      <p class="card__nick-text">Profile Views</p>
+      <p class="card__people">52k</p>
+      <p class="card__number">1375%</p>
     </div>
-    <div class="reaction">
-      <p class="reaction__typeof">Retweets</p>
-      <p class="reaction__people">117</p>
-      <p class="reaction__number">303%</p>
+    <div class="card">
+      <p class="card__nick-text">Retweets</p>
+      <p class="card__people">117</p>
+      <p class="card__number">303%</p>
     </div>
-    <div class="reaction">
-      <p class="reaction__typeof">Likes</p>
-      <p class="reaction__people">507</p>
-      <p class="reaction__number">553%</p>
+    <div class="card">
+      <p class="card__nick-text">Likes</p>
+      <p class="card__people">507</p>
+      <p class="card__number">553%</p>
     </div>
-    <div class="reaction">
-      <p class="reaction__typeof">Likes</p>
-      <p class="reaction__people">107</p>
-      <p class="reaction__number">19%</p>
+    <div class="card">
+      <p class="card__nick-text">Likes</p>
+      <p class="card__people">107</p>
+      <p class="card__number">19%</p>
     </div>
-    <div class="reaction">
-      <p class="reaction__typeof">Total Views</p>
-      <p class="reaction__people">1407</p>
-      <p class="reaction__number">12%</p>
+    <div class="card">
+      <p class="card__nick-text">Total Views</p>
+      <p class="card__people">1407</p>
+      <p class="card__number">12%</p>
     </div>
   </section>
 

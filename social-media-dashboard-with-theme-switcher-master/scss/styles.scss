@@ -1,0 +1,151 @@
+// Color variables
+$verydarkblue: hsl(230, 17%, 14%);
+$bluefacebook: hsl(208, 92%, 53%);
+$bluetwitter: hsl(203, 89%, 53%);
+$yellow: hsl(37, 97%, 70%);
+$pink: hsl(329, 70%, 58%);
+$red: hsl(348, 97%, 39%);
+$white: hsl(0, 0%, 100%);
+$toggleblue: hsl(230, 22%, 74%);
+$desaturedblue: hsl(228, 34%, 66%);
+$green: hsl(163, 72%, 41%);
+$brightred: hsl(356, 69%, 56%);
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: $verydarkblue;
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+}
+
+.followers{
+	text-align: center;
+}
+
+.card{
+	background-color: hsl(228, 28%, 20%);
+	border-radius: .4rem;
+	margin-bottom: 1.2rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: .6rem;
+	padding-bottom: .6rem;
+	position: relative;
+	width: 95%;
+	#{&}__people{
+		color: $white;
+		font-size: 4rem;
+		font-weight: 700;
+		margin: 0;
+	}
+	#{&}__tag{
+		color: $desaturedblue;
+		letter-spacing: .4rem;
+		margin: 0;
+		text-transform: uppercase;
+	}
+	#{&}__nick-text{
+		color: $desaturedblue;
+		display: inline-block;
+		font-weight: 700;
+	}
+	#{&}__number{
+		color: $white;
+		font-size: .8rem;
+		font-weight: 700;
+		margin-top: 1.5rem;
+	}
+	#{&}__nick-icon{
+		margin-right: .3rem;
+		position: relative;
+		top: .3rem;
+	}
+	#{&}__number-text{
+		display: inline-block;
+	}
+	#{&}__number-text--color-green{
+		color: $green;
+	}
+	#{&}__number-text--color-red{
+		color: $brightred;
+	}
+	#{&}__number-icon{
+		margin-right: .1rem;
+		position: relative;
+		top: -.15rem;
+	}
+}
+
+.card--topbordercolor-bluefb{
+	border-top: .3rem solid $bluefacebook;
+}
+
+.card--topbordercolor-bluetw{
+	border-top: .3rem solid $bluetwitter;
+}
+
+.card--topbordercolor-yellowig{
+  background: linear-gradient(to right, $yellow, $pink);
+	border-top-left-radius: .4rem;
+	border-top-right-radius: .4rem;
+	height: .3rem;
+	inset: 0;
+	position: absolute;
+}
+
+.card--topbordercolor-red{
+	border-top: .3rem solid $red;
+}
+
+/** Switch Styling properties
+ -------------------------------------*/
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+/**
+ * 1. Adjust this to size
+ */
+
+.switch{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px; /* 1 */
+  height: 1em;
+  width: 2em;
+  background-color: rgb(196, 191, 191);
+  border-radius: 1em;
+  position: relative;
+  top: 6px;
+  &:hover{
+	background-color: rgb(196, 191, 191);
+	cursor: pointer;
+  }
+}
+
+.switch div {
+  height: .8em;
+  width: .8em;
+  border-radius: 1em;
+  background: black;
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+          transition: all 300ms;
+	position: relative;
+	top: 2px;
+	left: 3px;
+}
+
+.switch input:checked + div {
+	background-color: black;
+  -webkit-transform: translate3d(110%, 0, 0);
+     -moz-transform: translate3d(110%, 0, 0);
+          transform: translate3d(110%, 0, 0);
+}
+
+//End Switch Styling properties
