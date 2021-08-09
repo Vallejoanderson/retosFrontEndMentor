@@ -25,6 +25,11 @@ body{
 	text-align: center;
 }
 
+.button{
+	display: flex;
+	justify-content: space-around;
+}
+
 .card{
 	background-color: hsl(228, 28%, 20%);
 	border-radius: .4rem;
