@@ -31,8 +31,7 @@ body{
 	margin-bottom: 1.2rem;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: .6rem;
-	padding-bottom: .6rem;
+	padding: .6rem 1.5rem;
 	position: relative;
 	width: 95%;
 	#{&}__people{
@@ -76,6 +75,29 @@ body{
 		margin-right: .1rem;
 		position: relative;
 		top: -.15rem;
+	}
+	#{&}__nick--display-flex{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#{&}__people--size-medium{
+		font-size: 1.8rem;
+	}
+	#{&}__stats{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#{&}__number--position-top{
+		position: relative;
+		top: -.6rem;
+		right: .3rem;
+	}
+	#{&}__number-icon--position-top{
+		position: relative;
+		top: -.8rem;
+		right: .2rem;
 	}
 }
 
