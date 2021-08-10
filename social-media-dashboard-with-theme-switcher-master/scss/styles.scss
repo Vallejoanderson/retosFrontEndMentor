@@ -20,6 +20,11 @@ $white: 		hsl(0, 0%, 100%);
 	grid-template-columns: repeat( auto-fill, minmax(250px, 1fr));
 }
 
+@mixin flexbehaviour(){
+	display: flex;
+	justify-content: space-between;
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -65,8 +70,7 @@ body{
 }
 
 .button{
-	display: flex;
-	justify-content: space-between;
+	@include flexbehaviour();
 	padding-left: .7rem;
 	padding-right: .7rem;
 	margin-bottom: 1rem;
@@ -128,16 +132,14 @@ body{
 		top: -.15rem;
 	}
 	#{&}__nick--display-flex{
-		display: flex;
-		justify-content: space-between;
+		@include flexbehaviour();
 		align-items: center;
 	}
 	#{&}__people--size-medium{
 		font-size: 1.8rem;
 	}
 	#{&}__stats{
-		display: flex;
-		justify-content: space-between;
+		@include flexbehaviour();
 		align-items: center;
 	}
 	#{&}__number--position-top{
@@ -159,8 +161,7 @@ body{
 		margin-right: auto;
 	}
 	.nav{
-		display: flex;
-		justify-content: space-between;
+		@include flexbehaviour();
 	}
 	.button{
 		margin-top: 3rem;
