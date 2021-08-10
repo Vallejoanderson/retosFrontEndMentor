@@ -9,10 +9,38 @@ body {
   font-size: 14px;
 }
 
+@media (min-width: 764px) {
+  body {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .button {
+    margin-top: 3rem;
+  }
+
+  .switch {
+    margin-left: 1rem;
+  }
+
+  .title__border {
+    display: none;
+  }
+}
 .title .title__main {
   color: white;
   padding: 2rem 1rem 0 1rem;
-  width: 85%;
+  width: 100%;
 }
 .title .title__main-sub {
   color: #63687e;
@@ -33,7 +61,22 @@ body {
 }
 
 .followers {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   text-align: center;
+}
+
+.overview {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .button {
