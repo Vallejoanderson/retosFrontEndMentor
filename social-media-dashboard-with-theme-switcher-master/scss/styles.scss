@@ -24,27 +24,6 @@ body{
 	font-size: 14px;
 }
 
-@media (min-width: 764px){
-	body{
-		width: 85%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.nav{
-		display: flex;
-		justify-content: space-between;
-	}
-	.button{
-		margin-top: 3rem;
-	}
-	.switch{
-		margin-left: 1rem;
-	}
-	.title__border{
-		display: none;
-	}
-}
-
 .title{
 	#{&}__main{
 		color: $white;
@@ -168,6 +147,27 @@ body{
 		position: relative;
 		top: -.8rem;
 		right: .2rem;
+	}
+}
+
+@media (min-width: 764px){
+	body{
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.nav{
+		display: flex;
+		justify-content: space-between;
+	}
+	.button{
+		margin-top: 3rem;
+	}
+	.switch{
+		margin-left: 1rem;
+	}
+	.title__border{
+		display: none;
 	}
 }
 
