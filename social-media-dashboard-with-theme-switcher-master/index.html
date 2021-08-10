@@ -9,19 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <nav class="nav">
-    <h1>Social Media Dashboard
-    <span>Total Followers: 23,004</span></h1>
+    <div class="title">
+      <h1 class="title__main">Social Media Dashboard
+      <span class="title__main-sub">Total Followers: 23,004</span></h1>
+      <div class="title__border"></div>
+    </div>
     <div class="button">
-      <p>Dark Mode</p>
+      <p class="button__title">Dark Mode</p>
       <label class="switch">
         <input id="checkbox" type="checkbox"/><div></div>
       </label>
@@ -79,7 +76,7 @@
     </div>
   </section>
 
-  <h2>Overview - Today</h2>
+  <h2 class="overviewtitle">Overview - Today</h2>
   <section class="overview">
     <div class="card card-topborder-">
       <div class="card__nick card__nick--display-flex">
@@ -189,7 +186,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Vallejoanderson">Anderson Vallejo</a>.
   </div>
 </body>
 </html>

@@ -9,6 +9,29 @@ body {
   font-size: 14px;
 }
 
+.title .title__main {
+  color: white;
+  padding: 2rem 1rem 0 1rem;
+  width: 85%;
+}
+.title .title__main-sub {
+  color: #63687e;
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+.title .title__border {
+  border-bottom: 1px solid #63687e;
+  margin: 0.7rem auto;
+  text-align: center;
+  width: 93%;
+}
+
+.overviewtitle {
+  color: white;
+  padding: 2rem 1rem 0 1rem;
+}
+
 .followers {
   text-align: center;
 }
@@ -17,8 +40,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  margin-bottom: 1rem;
+}
+.button .button__title {
+  color: #63687e;
+  font-weight: 700;
 }
 
 .card {
@@ -38,13 +69,13 @@ body {
   margin: 0;
 }
 .card .card__tag {
-  color: #8b97c6;
+  color: #63687e;
   letter-spacing: 0.4rem;
   margin: 0;
   text-transform: uppercase;
 }
 .card .card__nick-text {
-  color: #8b97c6;
+  color: #63687e;
   display: inline-block;
   font-weight: 700;
 }
@@ -148,13 +179,15 @@ body {
   /* 1 */
   height: 1em;
   width: 2em;
-  background-color: #c4bfbf;
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(to right, #378fe6, #3eda82);
   border-radius: 1em;
   position: relative;
-  top: 6px;
+  top: 12px;
 }
 .switch:hover {
-  background-color: #c4bfbf;
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(to right, #378fe6, #3eda82);
   cursor: pointer;
 }
 
@@ -162,7 +195,7 @@ body {
   height: 0.8em;
   width: 0.8em;
   border-radius: 1em;
-  background: black;
+  background: #252a41;
   -webkit-transition: all 300ms;
   transition: all 300ms;
   position: relative;
@@ -171,7 +204,7 @@ body {
 }
 
 .switch input:checked + div {
-  background-color: black;
+  background-color: #252a41;
   -webkit-transform: translate3d(110%, 0, 0);
   transform: translate3d(110%, 0, 0);
 }
