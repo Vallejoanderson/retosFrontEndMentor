@@ -38,7 +38,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr));
   text-align: center;
 }
 
@@ -48,7 +48,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr));
 }
 
 .button {
@@ -156,8 +156,8 @@ body {
 }
 
 @media (min-width: 764px) {
-  body {
-    width: 85%;
+  .container {
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }

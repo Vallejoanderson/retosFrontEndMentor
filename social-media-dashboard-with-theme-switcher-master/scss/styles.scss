@@ -17,7 +17,7 @@ $white: 		hsl(0, 0%, 100%);
 @mixin gridbehaviour(){
 	display: grid;
 	justify-content: center;
-	grid-template-columns: repeat( auto-fill, minmax(250px, 1fr));
+	grid-template-columns: repeat( auto-fill, minmax( min(100%, 330px), 1fr));
 }
 
 @mixin flexbehaviour(){
@@ -155,8 +155,8 @@ body{
 }
 
 @media (min-width: 764px){
-	body{
-		width: 85%;
+  .container{
+		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -194,6 +194,10 @@ body{
 .card--topbordercolor-red{
 	border-top: .3rem solid $red;
 }
+
+// Start classes for dark mode
+
+//
 
 /** Switch Styling properties
  -------------------------------------*/
