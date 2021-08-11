@@ -4,8 +4,10 @@ $bluetwitter: 	hsl(203, 89%, 53%);
 $brightred: 	hsl(356, 69%, 56%);
 $darkdesblue: 	hsl(228, 28%, 20%);
 $darkgrayblue: 	hsl(228, 12%, 44%);
+$darktext: 		hsl(230, 17%, 14%);
 $desaturedblue: hsl(228, 34%, 66%);
 $green: 		hsl(163, 72%, 41%);
+$lightcard: 	hsl(227, 47%, 96%);
 $pink: 			hsl(329, 70%, 58%);
 $red: 			hsl(348, 97%, 39%);
 $toggleblue: 	hsl(210, 78%, 56%);
@@ -29,7 +31,7 @@ $white: 		hsl(0, 0%, 100%);
 	box-sizing: border-box;
 }
 
-body{
+.body{
 	background-color: $verydarkblue;
 	font-family: 'Inter', sans-serif;
 	font-size: 14px;
@@ -75,7 +77,7 @@ body{
 	padding-right: .7rem;
 	margin-bottom: 1rem;
 	#{&}__title{
-		color: $darkgrayblue;
+		color: $white;
 		font-weight: 700;
 	}
 }
@@ -196,7 +198,25 @@ body{
 }
 
 // Start classes for dark mode
+.body--background-dark{
+	background-color: $white;
+}
+.card--background-light{
+	background-color: $lightcard;
+}
+.card .card__people--color-dark{
+	color: $darktext;
+}
+.overviewtitle--color-dark{
+	color: $darkgrayblue;
+}
+.title .title__main--color-dark{
+	color: $darktext;
+}
 
+.button .button__title--color-dark{
+	color: $darkgrayblue;
+}
 //
 
 /** Switch Styling properties
@@ -228,6 +248,7 @@ body{
 }
 
 .switch div {
+  cursor: pointer;
   height: .8em;
   width: .8em;
   border-radius: 1em;
@@ -240,11 +261,19 @@ body{
 	left: 3px;
 }
 
+.switch--color-light div{     // Change color for dark mode
+	background-color: $white;
+}
+
 .switch input:checked + div {
 	background-color: $darkdesblue;
   -webkit-transform: translate3d(110%, 0, 0);
      -moz-transform: translate3d(110%, 0, 0);
           transform: translate3d(110%, 0, 0);
+}
+
+.switch--color-light input:checked + div{ // Change color for dark mode
+	background-color: $white;
 }
 
 //End Switch Styling properties

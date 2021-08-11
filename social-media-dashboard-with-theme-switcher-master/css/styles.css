@@ -3,7 +3,7 @@
           box-sizing: border-box;
 }
 
-body {
+.body {
   background-color: #1e202a;
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -63,7 +63,7 @@ body {
   margin-bottom: 1rem;
 }
 .button .button__title {
-  color: #63687e;
+  color: white;
   font-weight: 700;
 }
 
@@ -205,6 +205,30 @@ body {
   border-top: 0.3rem solid #c4032a;
 }
 
+.body--background-dark {
+  background-color: white;
+}
+
+.card--background-light {
+  background-color: #f0f2fa;
+}
+
+.card .card__people--color-dark {
+  color: #1e202a;
+}
+
+.overviewtitle--color-dark {
+  color: #63687e;
+}
+
+.title .title__main--color-dark {
+  color: #1e202a;
+}
+
+.button .button__title--color-dark {
+  color: #63687e;
+}
+
 /** Switch Styling properties
  -------------------------------------*/
 .switch input {
@@ -235,6 +259,7 @@ body {
 }
 
 .switch div {
+  cursor: pointer;
   height: 0.8em;
   width: 0.8em;
   border-radius: 1em;
@@ -246,8 +271,16 @@ body {
   left: 3px;
 }
 
+.switch--color-light div {
+  background-color: white;
+}
+
 .switch input:checked + div {
   background-color: #252a41;
   -webkit-transform: translate3d(110%, 0, 0);
   transform: translate3d(110%, 0, 0);
+}
+
+.switch--color-light input:checked + div {
+  background-color: white;
 }
