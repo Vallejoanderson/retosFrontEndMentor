@@ -16,7 +16,7 @@ btn.addEventListener('change', function(){
 	}
 });
 
-function lightmode()
+function darkmode()
 {
 	body.classList.add("body--background-dark");
 	cards.forEach(function(card){
@@ -31,7 +31,7 @@ function lightmode()
 	switchh.classList.add('switch--color-light');
 }
 
-function darkmode()
+function lightmode()
 {
 	body.classList.remove("body--background-dark");
 	cards.forEach(function(card){
