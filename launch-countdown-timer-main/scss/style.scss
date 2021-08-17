@@ -2,6 +2,7 @@ $bottomblue: #343551;
 $darkblue: #201e2b;
 $darkdesblue: hsl(236, 21%, 26%);
 $grayblue: hsl(237, 16%, 22%);
+$grayishble: hsl(237, 18%, 59%);
 $graybluesemi: hsla(237, 16%, 22%, .2);
 $softred: hsl(345, 95%, 68%);
 $verydarkblue: hsl(235, 16%, 14%);
@@ -19,31 +20,46 @@ body{
 	background-position: center top, center bottom 0px;
 	background-repeat: no-repeat, no-repeat;
 	background-size: 100% 70%, 100% 25%;
+	font-size: 14px;
 	height: 100vh;
 	font-family: 'Red Hat Text', sans-serif;
-  overflow: hidden;
+  	overflow: hidden;
+}
+
+.title{
+	font-size: 1rem;
+	letter-spacing: 3px;
 	text-align: center;
+	text-transform: uppercase;
+	margin-top: 7rem;
+	margin-bottom: 3rem;
+	#{&}__sub{
+		display: block;
+	}
 }
 
 .cards{
 	display: flex;
 	justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+	width: 344px;
 }
 
 .card{
-	border-radius: 7px;
-	box-shadow: 0 7px 0 $verydarkblackblue;
-	height: 80px;
+	border-radius: 3px;
+	box-shadow: 0 3px 0 $verydarkblackblue;
+	height: 70px;
 	overflow: hidden;
 	position: relative;
-	width: 80px;
+	width: 70px;
 	#{&}__date{
 		color: $softred;
-		font-size: 2.8rem;
+		font-size: 2.6rem;
 		font-weight: 700;
-		left: 18px;
+		left: 14px;
 		position: absolute;
-		top: -35px;
+		top: -34px;
 	}
 	#{&}__top{
 		background-color: $grayblue;
@@ -69,4 +85,12 @@ body{
 			radial-gradient(circle at 0 0, $verydarkblue 3px, transparent 3px);
 		height: 50%;
 	}
+}
+
+.date{
+	color: $grayishble;
+	font-size: .5rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
 }
