@@ -19,7 +19,7 @@ body{
 	background-image: url(/images/bg-stars.svg), url(/images/pattern-hills.svg);
 	background-position: center top, center bottom 0px;
 	background-repeat: no-repeat, no-repeat;
-	background-size: 100% 70%, 100% 25%;
+	background-size: 100% 65%, 100% 35%;
 	font-size: 14px;
 	height: 100vh;
 	font-family: 'Red Hat Text', sans-serif;
@@ -57,7 +57,7 @@ body{
 		color: $softred;
 		font-size: 2.6rem;
 		font-weight: 700;
-		left: 14px;
+		left: 9px;
 		position: absolute;
 		top: -34px;
 	}
@@ -90,7 +90,24 @@ body{
 .date{
 	color: $grayishble;
 	font-size: .5rem;
+	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: 300;
+}
+
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.icons{
+	align-items: center;
+	display: flex;
+	height: 50px;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 50px;
+	width: 100px;
 }
