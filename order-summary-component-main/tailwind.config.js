@@ -2,14 +2,13 @@ module.exports = {
   purge: [],
   theme: {
     fontFamily: {
-      redhad: ['Red Hat Display'],
+      redhat: ['Red Hat Display'],
     },
     extend: {
       backgroundImage: (theme) => ({
           'top-pattern': "url('images/pattern-background-desktop.svg')",
           'top-pattern-mb': "url('images/pattern-background-mobile.svg')",
         }),
-
       colors: {
         paleblue: 'hsl(225, 100%, 94%)',
         brightblue: 'hsl(245, 75%, 52%)',
