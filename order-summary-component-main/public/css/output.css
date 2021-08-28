@@ -17998,11 +17998,11 @@ video {
 }
 
 .bg-top-pattern {
-  background-image: url('images/pattern-background-desktop.svg');
+  background-image: url('./images/pattern-background-desktop.svg');
 }
 
 .bg-top-pattern-mb {
-  background-image: url('images/pattern-background-mobile.svg');
+  background-image: url('./images/pattern-background-mobile.svg');
 }
 
 .from-transparent {
@@ -50297,11 +50297,11 @@ video {
   }
 
   .sm\:bg-top-pattern {
-    background-image: url('images/pattern-background-desktop.svg');
+    background-image: url('./images/pattern-background-desktop.svg');
   }
 
   .sm\:bg-top-pattern-mb {
-    background-image: url('images/pattern-background-mobile.svg');
+    background-image: url('./images/pattern-background-mobile.svg');
   }
 
   .sm\:from-transparent {
@@ -82228,11 +82228,11 @@ video {
   }
 
   .md\:bg-top-pattern {
-    background-image: url('images/pattern-background-desktop.svg');
+    background-image: url('./images/pattern-background-desktop.svg');
   }
 
   .md\:bg-top-pattern-mb {
-    background-image: url('images/pattern-background-mobile.svg');
+    background-image: url('./images/pattern-background-mobile.svg');
   }
 
   .md\:from-transparent {
@@ -114159,11 +114159,11 @@ video {
   }
 
   .lg\:bg-top-pattern {
-    background-image: url('images/pattern-background-desktop.svg');
+    background-image: url('./images/pattern-background-desktop.svg');
   }
 
   .lg\:bg-top-pattern-mb {
-    background-image: url('images/pattern-background-mobile.svg');
+    background-image: url('./images/pattern-background-mobile.svg');
   }
 
   .lg\:from-transparent {
@@ -146090,11 +146090,11 @@ video {
   }
 
   .xl\:bg-top-pattern {
-    background-image: url('images/pattern-background-desktop.svg');
+    background-image: url('./images/pattern-background-desktop.svg');
   }
 
   .xl\:bg-top-pattern-mb {
-    background-image: url('images/pattern-background-mobile.svg');
+    background-image: url('./images/pattern-background-mobile.svg');
   }
 
   .xl\:from-transparent {
@@ -178021,11 +178021,11 @@ video {
   }
 
   .\32xl\:bg-top-pattern {
-    background-image: url('images/pattern-background-desktop.svg');
+    background-image: url('./images/pattern-background-desktop.svg');
   }
 
   .\32xl\:bg-top-pattern-mb {
-    background-image: url('images/pattern-background-mobile.svg');
+    background-image: url('./images/pattern-background-mobile.svg');
   }
 
   .\32xl\:from-transparent {
