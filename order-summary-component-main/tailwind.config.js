@@ -6,8 +6,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: (theme) => ({
-          'top-pattern': "url('/public/images/pattern-background-desktop.svg')",
-          'top-pattern-mb': "url('/public/images/pattern-background-mobile.svg')",
+          'top-pattern': "url('/images/pattern-background-desktop.svg')",
+          'top-pattern-mb': "url('/images/pattern-background-mobile.svg')",
         }),
       colors: {
         paleblue: 
