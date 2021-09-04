@@ -4,31 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 <body>
-  <img src="images/logo.svg" alt="logo">
-  <header>
-    <nav>
-      <ul>
-        <li>
+  <header class="header">
+    <div class="header__icons">
+      <img class="logo" src="images/logo.svg" alt="logo">
+      <img class="bar" src="images/icon-hamburger.svg" alt="">
+    </div>
+    <nav class="header__options">
+      <ul class="list">
+        <li class="list__item">
           About
         </li>
-        <li>
+        <li  class="list__item">
           Services
         </li>
-        <li>
+        <li  class="list__item">
           Projects
         </li>
         <li>
-          Contact
+          <button class="button">
+            Contact
+          </button>
         </li>
       </ul>
     </nav>
+    <h1 class="header__text">
+      We are creatives
+    </h1>
+    <img class="arrow" src="images/icon-arrow-down.svg" alt="">
   </header>
-  <h1>
-    We are creatives
-  </h1>
   <article>
     <img src="images/mobile/image-transform.jpg" alt="">
     <h2>

@@ -1,0 +1,67 @@
+body {
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.header {
+  background-image: url(/images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header .header__icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1.2rem;
+}
+.header .header__text {
+  color: white;
+  font-family: "Fraunces", serif;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.list {
+  background-color: white;
+  color: #a7abae;
+  font-family: "Barlow", sans-serif;
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 0;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 90%;
+  z-index: 1;
+}
+.list .list__item {
+  margin-bottom: 1.7rem;
+}
+
+.button {
+  background-color: #fad400;
+  border: #fad400;
+  border-radius: 1.4rem;
+  font-family: "Fraunces", serif;
+  padding: 0.8rem 1.2rem;
+  text-transform: uppercase;
+}
+
+.bar {
+  cursor: pointer;
+  height: 1rem;
+  width: 1.4rem;
+}
+
+.arrow {
+  margin-bottom: 7rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

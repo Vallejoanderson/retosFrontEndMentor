@@ -1,0 +1,76 @@
+$softred:                   hsl(7, 99%, 70%);
+$yellow:                    hsl(51, 100%, 49%);
+$darkdesaturatedcyan:       hsl(167, 40%, 24%);
+$darkblue:                  hsl(198, 62%, 26%);
+$verydarkmoderatecyan:      hsl(168, 34%, 41%);
+$verydarkdesaturatedblue:   hsl(212, 27%, 19%);
+$darkgrayishblue:           hsl(213, 9%, 39%);
+$grayishblue:               hsl(210, 4%, 67%);
+$white:                     hsl(0, 0%, 100%);
+
+body{
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+
+.header{
+    background-image: url(/images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    #{&}__icons{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 1.2rem;
+    }
+
+    #{&}__text{
+        color: white;
+        font-family: 'Fraunces', serif;
+        font-size: 2.3rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.list{
+    background-color: white;
+    color: $grayishblue;
+    font-family: 'Barlow', sans-serif;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    position: absolute;
+    top: 15%;   
+    left: 5%;
+    width: 90%;
+    z-index: 1;
+    #{&}__item{
+        margin-bottom: 1.7rem;
+    }
+}
+
+.button{
+    background-color: $yellow;
+    border: $yellow;
+    border-radius: 1.4rem;
+    font-family: 'Fraunces', serif;
+    padding: .8rem 1.2rem;
+    text-transform: uppercase;
+}
+
+.bar{
+    cursor: pointer;
+    height: 1rem;
+    width: 1.4rem;
+}
+
+.arrow{
+    margin-bottom: 7rem;
+}
