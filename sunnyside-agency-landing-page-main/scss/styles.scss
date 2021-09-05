@@ -24,15 +24,20 @@ body{
         justify-content: space-between;
         padding: 1.5rem 1.2rem;
     }
-
+    #{&}__options{
+        display: none;
+    }
     #{&}__text{
         color: white;
         font-family: 'Fraunces', serif;
-        font-size: 2.3rem;
+        font-size: 3rem;
         letter-spacing: .2rem;
         text-transform: uppercase;
-        margin-top: 4rem;
+        margin-top: 5rem;
         margin-bottom: 2rem;
+    }
+    #{&}__arrow{
+        margin-bottom: 9rem;
     }
 }
 
@@ -65,12 +70,47 @@ body{
     text-transform: uppercase;
 }
 
+.advantages{
+    #{&}__image{
+        width: 100%;
+    }
+    #{&}__text{
+        color: $verydarkdesaturatedblue;
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        font-size: 2rem;
+        padding: 2rem 2rem 0rem 2rem;
+    }
+    #{&}__para{
+        color: $grayishblue;
+        font-family: 'Barlow', sans-serif;
+        line-height: 1.5;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        margin-bottom: 1.3rem;
+    }
+    #{&}__moreinfo{
+        color: $verydarkdesaturatedblue;
+        display: inline-block;
+        font-size: .9rem;
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        width: auto;
+    }
+    #{&}__moreinfo-border--size{
+        background-color: $yellow;
+        border-radius: .3rem;
+        height: .3rem;
+        margin-bottom: 3rem;
+        position: relative;
+        top: -1.15rem;
+        width: 100%;
+    }
+}
+
 .bar{
     cursor: pointer;
     height: 1rem;
     width: 1.4rem;
-}
-
-.arrow{
-    margin-bottom: 7rem;
 }

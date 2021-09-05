@@ -15,14 +15,20 @@ body {
   justify-content: space-between;
   padding: 1.5rem 1.2rem;
 }
+.header .header__options {
+  display: none;
+}
 .header .header__text {
   color: white;
   font-family: "Fraunces", serif;
-  font-size: 2.3rem;
+  font-size: 3rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  margin-top: 4rem;
+  margin-top: 5rem;
   margin-bottom: 2rem;
+}
+.header .header__arrow {
+  margin-bottom: 9rem;
 }
 
 .list {
@@ -54,14 +60,47 @@ body {
   text-transform: uppercase;
 }
 
+.advantages .advantages__image {
+  width: 100%;
+}
+.advantages .advantages__text {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 2rem 2rem 0rem 2rem;
+}
+.advantages .advantages__para {
+  color: #a7abae;
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-bottom: 1.3rem;
+}
+.advantages .advantages__moreinfo {
+  color: #23303e;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: auto;
+}
+.advantages .advantages__moreinfo-border--size {
+  background-color: #fad400;
+  border-radius: 0.3rem;
+  height: 0.3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  top: -1.15rem;
+  width: 100%;
+}
+
 .bar {
   cursor: pointer;
   height: 1rem;
   width: 1.4rem;
-}
-
-.arrow {
-  margin-bottom: 7rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
