@@ -15,6 +15,10 @@ body {
   justify-content: space-between;
   padding: 1.5rem 1.2rem;
 }
+.header .header__bar {
+  height: 1rem;
+  width: 1.4rem;
+}
 .header .header__options {
   display: none;
 }
@@ -88,7 +92,6 @@ body {
   width: auto;
 }
 .advantages .advantages__moreinfo-border--size {
-  background-color: #fad400;
   border-radius: 0.3rem;
   height: 0.3rem;
   margin-bottom: 3rem;
@@ -96,11 +99,119 @@ body {
   top: -1.15rem;
   width: 100%;
 }
+.advantages .advantages__moreinfo-color--yellow {
+  background-color: #fad400;
+}
+.advantages .advantages__moreinfo-color--red {
+  background-color: #fe7867;
+}
 
-.bar {
-  cursor: pointer;
-  height: 1rem;
-  width: 1.4rem;
+.fruitcard-background--graphic {
+  background-image: url(/images/mobile/image-graphic-design.jpg);
+}
+
+.fruitcard-background--photography {
+  background-image: url(/images/mobile/image-photography.jpg);
+}
+
+.fruitcard {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fruitcard .fruitcard__text {
+  color: #25564b;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  padding-top: 25rem;
+  margin-top: 0;
+}
+.fruitcard .fruitcard__para {
+  color: #25564b;
+  font-size: 0.9rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  padding-bottom: 2.5rem;
+  line-height: 1.5;
+}
+
+.testimonials .testimonials__title {
+  color: #a7abae;
+  font-family: "Fraunces", serif;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.client {
+  margin-bottom: 4.3rem;
+}
+.client .client__picture {
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+  width: 4.5rem;
+}
+.client .client__para {
+  color: #5a636c;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.client .client__name {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin-top: 3rem;
+}
+.client .client__profession {
+  color: #a7abae;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.food {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.food .food__image {
+  width: 100%;
+}
+
+.footer {
+  background-color: #93cabf;
+  color: #25564b;
+  font-family: "Barlow", sans-serif;
+  padding: 4rem 2rem;
+}
+.footer .footer__list {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+  padding-left: 0;
+  list-style-type: none;
+}
+.footer .footer__icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+li {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=styles.css.map */

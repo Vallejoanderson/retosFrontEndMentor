@@ -2,7 +2,7 @@ $softred:                   hsl(7, 99%, 70%);
 $yellow:                    hsl(51, 100%, 49%);
 $darkdesaturatedcyan:       hsl(167, 40%, 24%);
 $darkblue:                  hsl(198, 62%, 26%);
-$verydarkmoderatecyan:      hsl(168, 34%, 41%);
+$verydarkmoderatecyan:      hsl(168, 34%, 41% / .6);
 $verydarkdesaturatedblue:   hsl(212, 27%, 19%);
 $darkgrayishblue:           hsl(213, 9%, 39%);
 $grayishblue:               hsl(210, 4%, 67%);
@@ -23,6 +23,10 @@ body{
         display: flex;
         justify-content: space-between;
         padding: 1.5rem 1.2rem;
+    }
+    #{&}__bar{
+        height: 1rem;
+        width: 1.4rem;
     }
     #{&}__options{
         display: none;
@@ -99,7 +103,6 @@ body{
         width: auto;
     }
     #{&}__moreinfo-border--size{
-        background-color: $yellow;
         border-radius: .3rem;
         height: .3rem;
         margin-bottom: 3rem;
@@ -107,10 +110,120 @@ body{
         top: -1.15rem;
         width: 100%;
     }
+    #{&}__moreinfo-color--yellow{
+        background-color: $yellow;
+    }
+    #{&}__moreinfo-color--red{
+        background-color: $softred;
+    }
 }
 
-.bar{
-    cursor: pointer;
-    height: 1rem;
-    width: 1.4rem;
+.fruitcard-background--graphic{
+    background-image: url(/images/mobile/image-graphic-design.jpg);
+}
+
+.fruitcard-background--photography{
+    background-image: url(/images/mobile/image-photography.jpg);
+}
+
+.fruitcard{
+    background-repeat: no-repeat;
+    background-size: cover;
+    #{&}__text{
+        color: $darkdesaturatedcyan;
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        padding-top: 25rem;
+        margin-top: 0;
+    }
+    #{&}__para{
+        color: $darkdesaturatedcyan;
+        font-size: .9rem;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.5;
+    }
+}
+
+.testimonials{
+    #{&}__title{
+        color: $grayishblue;
+        font-family: 'Fraunces', serif;
+        font-size: 1rem;
+        font-weight: 900;
+        letter-spacing: .3rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+    }
+}
+
+.client{
+    margin-bottom: 4.3rem;
+    #{&}__picture{
+        border-radius: 50%;
+        margin-bottom: .8rem;
+        width: 4.5rem;
+    }
+    #{&}__para{
+        color: $darkgrayishblue;
+	    font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    #{&}__name{
+        color: $verydarkdesaturatedblue;
+        font-family: 'Fraunces', serif;
+        font-size: 1.1rem;
+        font-weight: 900;
+        margin-top: 3rem;
+    }
+    #{&}__profession{
+        color: $grayishblue;
+        font-family: 'Barlow', sans-serif;
+        font-size: .9rem;
+        font-weight: 600;
+        display: block;
+        margin-top: .8rem;
+    }
+}
+
+.food{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    #{&}__image{
+        width: 100%;
+    }
+}
+
+.footer{
+    background-color: $verydarkmoderatecyan;
+    color: $darkdesaturatedcyan;
+    font-family: 'Barlow', sans-serif;
+    padding: 4rem 2rem;
+    #{&}__list{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1.5rem;
+        padding-left: 0;
+        list-style-type: none;
+    }
+    #{&}__icons{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+}
+
+li{
+    display: inline-block;
 }
