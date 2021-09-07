@@ -40,7 +40,7 @@ body {
 .header .header__options-display--block {
   display: block;
 }
-.header .header__text {
+.header .header__title {
   color: white;
   font-family: "Fraunces", serif;
   font-size: 3rem;
@@ -77,10 +77,19 @@ body {
   text-transform: uppercase;
 }
 
+@media (min-width: 874px) {
+  .advantages {
+    display: flex;
+  }
+}
 .advantages .advantages__image {
+  flex-basis: 50%;
   width: 100%;
 }
 .advantages .advantages__text {
+  flex-basis: 50%;
+}
+.advantages .advantages__title {
   color: #23303e;
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -119,6 +128,16 @@ body {
   background-color: #fe7867;
 }
 
+.advantages-flex--reverse {
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 874px) {
+  .fruits {
+    display: flex;
+  }
+}
+
 .fruitcard-background--graphic {
   background-image: url(/images/mobile/image-graphic-design.jpg);
 }
@@ -130,8 +149,9 @@ body {
 .fruitcard {
   background-repeat: no-repeat;
   background-size: cover;
+  flex-basis: 50%;
 }
-.fruitcard .fruitcard__text {
+.fruitcard .fruitcard__title {
   color: #25564b;
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -151,6 +171,11 @@ body {
   line-height: 1.5;
 }
 
+@media (min-width: 874px) {
+  .testimonials .testimonials__cards {
+    display: flex;
+  }
+}
 .testimonials .testimonials__title {
   color: #a7abae;
   font-family: "Fraunces", serif;
@@ -196,6 +221,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+@media (min-width: 874px) {
+  .food {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 .food .food__image {
   width: 100%;

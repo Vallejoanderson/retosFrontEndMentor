@@ -7,6 +7,7 @@ $verydarkdesaturatedblue:   hsl(212, 27%, 19%);
 $darkgrayishblue:           hsl(213, 9%, 39%);
 $grayishblue:               hsl(210, 4%, 67%);
 $white:                     hsl(0, 0%, 100%);
+$big:                         874px;
 
 body{
     font-size: 18px;
@@ -49,7 +50,7 @@ body{
     #{&}__options-display--block{
         display: block;
     }
-    #{&}__text{
+    #{&}__title{
         color: white;
         font-family: 'Fraunces', serif;
         font-size: 3rem;
@@ -88,10 +89,17 @@ body{
 }
 
 .advantages{
+    @media (min-width: $big) {
+        display: flex;
+    }
     #{&}__image{
+        flex-basis: 50%;
         width: 100%;
     }
     #{&}__text{
+        flex-basis: 50%;
+    }
+    #{&}__title{
         color: $verydarkdesaturatedblue;
         font-family: 'Fraunces', serif;
         font-weight: 900;
@@ -130,6 +138,15 @@ body{
         background-color: $softred;
     }
 }
+.advantages-flex--reverse{
+    flex-direction: row-reverse;
+}
+
+.fruits{
+    @media (min-width: $big){
+        display: flex;
+    }
+}
 
 .fruitcard-background--graphic{
     background-image: url(/images/mobile/image-graphic-design.jpg);
@@ -142,7 +159,8 @@ body{
 .fruitcard{
     background-repeat: no-repeat;
     background-size: cover;
-    #{&}__text{
+    flex-basis: 50%;
+    #{&}__title{
         color: $darkdesaturatedcyan;
         font-family: 'Fraunces', serif;
         font-weight: 900;
@@ -164,6 +182,11 @@ body{
 }
 
 .testimonials{
+    #{&}__cards{
+        @media (min-width: $big){
+            display: flex;
+        }
+    }
     #{&}__title{
         color: $grayishblue;
         font-family: 'Fraunces', serif;
@@ -210,6 +233,9 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:  1fr 1fr;
+    @media (min-width: $big){
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+    }
     #{&}__image{
         width: 100%;
     }
