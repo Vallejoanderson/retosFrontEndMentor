@@ -1,6 +1,9 @@
 body {
   font-size: 18px;
   margin: 0;
+}
+
+.container {
   text-align: center;
 }
 
@@ -9,16 +12,31 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
 }
 @media (min-width: 874px) {
   .header {
     background-image: url(/images/desktop/image-header.jpg);
+    position: relative;
+  }
+}
+@media (min-width: 874px) {
+  .header .header__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 .header .header__icons {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 1.2rem;
+}
+@media (min-width: 874px) {
+  .header .header__icons {
+    width: 150px;
+    height: 30px;
+  }
 }
 .header .header__bar {
   height: 1rem;
@@ -37,6 +55,13 @@ body {
   width: 90%;
   z-index: 1;
 }
+@media (min-width: 874px) {
+  .header .header__options {
+    display: block;
+    width: 350px;
+    position: static;
+  }
+}
 .header .header__options:after {
   content: "";
   width: 0;
@@ -46,6 +71,11 @@ body {
   position: relative;
   bottom: 20rem;
   left: 9.1rem;
+}
+@media (min-width: 874px) {
+  .header .header__options:after {
+    display: none;
+  }
 }
 .header .header__options-display--block {
   display: block;
@@ -74,8 +104,22 @@ body {
   padding-top: 2rem;
   padding-left: 0;
 }
+@media (min-width: 874px) {
+  .list {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    padding-top: 0.3rem;
+    padding-bottom: 0px;
+  }
+}
 .list .list__item {
   margin-bottom: 1.7rem;
+}
+@media (min-width: 874px) {
+  .list .list__item {
+    margin-right: 1rem;
+  }
 }
 
 .button {
@@ -86,10 +130,23 @@ body {
   padding: 0.8rem 1.2rem;
   text-transform: uppercase;
 }
+@media (min-width: 874px) {
+  .button {
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    bottom: 0.3rem;
+  }
+}
+.button:hover {
+  background-color: #c8e5f2;
+}
 
 @media (min-width: 874px) {
   .advantages {
     display: flex;
+    max-height: 450px;
+    text-align: left;
   }
 }
 .advantages .advantages__image {
@@ -109,7 +166,6 @@ body {
 @media (min-width: 874px) {
   .advantages .advantages__title {
     padding: 4rem 2rem 0 5.5rem;
-    text-align: left;
   }
 }
 .advantages .advantages__para {
@@ -124,7 +180,6 @@ body {
   .advantages .advantages__para {
     padding-left: 5.5rem;
     padding-right: 3rem;
-    text-align: left;
   }
 }
 .advantages .advantages__moreinfo {
@@ -135,8 +190,10 @@ body {
   font-weight: 900;
   text-transform: uppercase;
 }
-.advantages .advantages__moreinfo-para {
-  text-align: left;
+@media (min-width: 874px) {
+  .advantages .advantages__moreinfo {
+    padding-left: 5.5rem;
+  }
 }
 .advantages .advantages__moreinfo-border--size {
   border-radius: 0.3rem;
@@ -166,13 +223,24 @@ body {
 .fruitcard-background--graphic {
   background-image: url(/images/mobile/image-graphic-design.jpg);
 }
+@media (min-width: 874px) {
+  .fruitcard-background--graphic {
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+  }
+}
 
 .fruitcard-background--photography {
   background-image: url(/images/mobile/image-photography.jpg);
 }
+@media (min-width: 874px) {
+  .fruitcard-background--photography {
+    background-image: url(/images/desktop/image-photography.jpg);
+  }
+}
 
 .fruitcard {
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   flex-basis: 50%;
 }
@@ -182,6 +250,11 @@ body {
   font-weight: 900;
   padding-top: 25rem;
   margin-top: 0;
+}
+@media (min-width: 874px) {
+  .fruitcard .fruitcard__title {
+    padding-top: 25rem;
+  }
 }
 .fruitcard .fruitcard__para {
   color: #25564b;
@@ -195,10 +268,19 @@ body {
   padding-bottom: 2.5rem;
   line-height: 1.5;
 }
+@media (min-width: 874px) {
+  .fruitcard .fruitcard__para {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
 
 @media (min-width: 874px) {
   .testimonials .testimonials__cards {
     display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 .testimonials .testimonials__title {
@@ -262,6 +344,12 @@ body {
   color: #25564b;
   font-family: "Barlow", sans-serif;
   padding: 4rem 2rem;
+}
+@media (min-width: 874px) {
+  .footer {
+    padding-left: 25rem;
+    padding-right: 25rem;
+  }
 }
 .footer .footer__list {
   display: flex;
