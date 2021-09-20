@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <div id="app" class="container">
+    <div class="profile">
+      <h1 class="profile__title">
+        Report for
+        <span>Jeremy Robson</span>
+      </h1>
+      <ol>
+        <li @click="time = 'daily'" >
+          Daily
+        </li>
+        <li @click="time = 'weekly'">
+          Weekly
+        </li>
+        <li @click="time = 'monthly'">
+          Monthly
+        </li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="card__top">
+        <h2 class="card__title">
+          Work
+        </h2>
+        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+      </div>
+      <div class="card__info">
+        <p class="card__hours">
+          {{ alldata[0].timeframes[time].current }}
+        </p>
+        <p class="card__time">
+          Last Week  - {{ alldata[0].timeframes[time].previous }}hrs
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__top">
+        <h2 class="card__title">
+          Play
+        </h2>
+        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+      </div>
+      <div class="card__info">
+        <p class="card__hours">
+
+        </p>
+        <p class="card__time">
+
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__top">
+        <h2 class="card__title">
+          Study
+        </h2>
+        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+      </div>
+      <div class="card__info">
+        <p class="card__hours" v-bind="alldata.title">
+
+        </p>
+        <p class="card__time">
+
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__top">
+        <h2 class="card__title">
+          Exercise
+        </h2>
+        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+      </div>
+      <div class="card__info">
+        <p class="card__hours">
+
+        </p>
+        <p class="card__time">
+
+        </p>
+      </div>
+    </div>
+    <div class="card">   
+      <div class="card__top">
+        <h2 class="card__title">
+          Social
+        </h2>
+        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+      </div>
+      <div class="card__info">
+        <p class="card__hours">
+
+        </p>
+        <p class="card__time">
+
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__top">
+        <h2 class="card__title">
+          Self Care
+        </h2>
+        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+      </div>
+      <div class="card__info">
+        <p class="card__hours">
+
+        </p>
+        <p class="card__time">
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <pre>{{ $app.data }}</pre>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
