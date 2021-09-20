@@ -2,6 +2,7 @@ $softred:                   hsl(7, 99%, 70%);
 $yellow:                    hsl(51, 100%, 49%);
 $darkdesaturatedcyan:       hsl(167, 40%, 24%);
 $darkblue:                  hsl(198, 62%, 26%);
+$darkbluesoft:              hsl(198, 62%, 26% / .3);
 $verydarkmoderatecyan:      hsl(168, 34%, 41% / .6);
 $verydarkdesaturatedblue:   hsl(212, 27%, 19%);
 $darkgrayishblue:           hsl(213, 9%, 39%);
@@ -12,6 +13,9 @@ $big:                         874px;
 body{
     font-size: 18px;
     margin: 0;
+}
+
+.container{
     text-align: center;
 }
 
@@ -20,13 +24,26 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: 100%;
     @media (min-width: $big){
         background-image: url(/images/desktop/image-header.jpg);
+        position: relative;
+    }
+    #{&}__container {
+        @media (min-width: $big) {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
     }
     #{&}__icons{
         display: flex;
         justify-content: space-between;
         padding: 1.5rem 1.2rem;
+        @media (min-width: $big){
+            width: 150px;
+            height: 30px;
+        }
     }
     #{&}__bar{
         height: 1rem;
@@ -42,6 +59,11 @@ body{
         position: absolute;
         width: 90%;
         z-index: 1;
+        @media (min-width: $big){
+            display: block;
+            width: 350px;
+            position: static;
+        }
     }
     #{&}__options:after{
         content: "";
@@ -52,6 +74,9 @@ body{
         position: relative;
         bottom: 20rem;
         left: 9.1rem;
+        @media (min-width: $big){
+            display: none;
+        }
     }
     #{&}__options-display--block{
         display: block;
@@ -80,8 +105,18 @@ body{
     padding-bottom: 2rem;
     padding-top: 2rem;
     padding-left: 0;
+    @media (min-width: $big){
+        background-color: transparent;
+        color: $white;
+        display: flex;
+        padding-top: .3rem;
+        padding-bottom: 0px;
+    }
     #{&}__item{
         margin-bottom: 1.7rem;
+        @media (min-width: $big){
+            margin-right: 1rem;
+        }
     }
 }
 
@@ -92,11 +127,22 @@ body{
     font-family: 'Fraunces', serif;
     padding: .8rem 1.2rem;
     text-transform: uppercase;
+    @media (min-width: $big){
+        background-color: $white;
+        cursor: pointer;
+        position: relative;
+        bottom: .3rem;
+    }
+    &:hover{
+        background-color: $darkbluesoft;
+    }
 }
 
 .advantages{
     @media (min-width: $big) {
         display: flex;
+        max-height: 450px;
+        text-align: left;
     }
     #{&}__image{
         flex-basis: 50%;
@@ -113,7 +159,6 @@ body{
         padding: 2rem 2rem 0rem 2rem;
         @media (min-width: $big) {
             padding: 4rem 2rem 0 5.5rem;
-            text-align: left;
         }
     }
     #{&}__para{
@@ -126,7 +171,6 @@ body{
         @media (min-width: $big) {
             padding-left: 5.5rem;
             padding-right: 3rem;
-            text-align: left;
         }
     }
     #{&}__moreinfo{
@@ -136,9 +180,9 @@ body{
         font-family: 'Fraunces', serif;
         font-weight: 900;
         text-transform: uppercase;
-    }
-    #{&}__moreinfo-para{
-        text-align: left;
+        @media (min-width: $big){
+            padding-left: 5.5rem;
+        }
     }
     #{&}__moreinfo-border--size{
         border-radius: .3rem;
@@ -167,14 +211,21 @@ body{
 
 .fruitcard-background--graphic{
     background-image: url(/images/mobile/image-graphic-design.jpg);
+    @media (min-width: $big){
+        background-image: url(/images/desktop/image-graphic-design.jpg);
+    }
 }
 
 .fruitcard-background--photography{
     background-image: url(/images/mobile/image-photography.jpg);
+    @media (min-width: $big){
+        background-image: url(/images/desktop/image-photography.jpg);
+    }
 }
 
 .fruitcard{
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     flex-basis: 50%;
     #{&}__title{
@@ -183,6 +234,9 @@ body{
         font-weight: 900;
         padding-top: 25rem;
         margin-top: 0;
+        @media (min-width: $big){
+            padding-top: 25rem;
+        }
     }
     #{&}__para{
         color: $darkdesaturatedcyan;
@@ -195,6 +249,10 @@ body{
         padding-right: 1.4rem;
         padding-bottom: 2.5rem;
         line-height: 1.5;
+        @media (min-width: $big){
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
     }
 }
 
@@ -202,6 +260,9 @@ body{
     #{&}__cards{
         @media (min-width: $big){
             display: flex;
+            justify-content: space-between;
+            padding-left: 5rem;
+            padding-right: 5rem;
         }
     }
     #{&}__title{
@@ -264,6 +325,10 @@ body{
     color: $darkdesaturatedcyan;
     font-family: 'Barlow', sans-serif;
     padding: 4rem 2rem;
+    @media (min-width: $big) {
+        padding-left: 25rem;
+        padding-right: 25rem;
+    }
     #{&}__list{
         display: flex;
         justify-content: space-around;
