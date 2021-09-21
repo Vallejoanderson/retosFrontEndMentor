@@ -1,0 +1,52 @@
+body {
+  background-color: #0f1424;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+
+.profile {
+  background-color: #1c1f4a;
+  border-radius: 0.9rem;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+.profile .profile__data {
+  background-color: #5847eb;
+  border-radius: 0.9rem;
+  display: flex;
+  padding: 1.8rem;
+}
+.profile .profile__title {
+  color: #bdc1ff;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 1.3rem;
+}
+.profile .profile__name {
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 0.2rem;
+}
+.profile .profile__image {
+  border: solid 3px #fff;
+  border-radius: 50%;
+  width: 4rem;
+}
+.profile .profile__time {
+  color: #6f76c8;
+}
+
+ol {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  text-align: center;
+  padding: 1.5rem 1.8rem;
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

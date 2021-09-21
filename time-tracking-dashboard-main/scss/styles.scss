@@ -1,0 +1,62 @@
+$blue:          hsl(246, 80%, 60%);
+$orange:        hsl(15, 100%, 70%);
+$pink:          hsl(348, 100%, 68%);
+$green:         hsl(145, 58%, 55%);
+$violet:        hsl(264, 64%, 52%);
+$yellow:        hsl(43, 84%, 65%);
+$verydarkblue:  hsl(226, 43%, 10%);
+$darkblue:      hsl(235, 46%, 20%);
+$desaturedblue: hsl(235, 45%, 61%);
+$paleblue:      hsl(236, 100%, 87%);
+$white:         #fff;
+
+body{
+    background-color: $verydarkblue;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+
+.profile{
+    background-color: $darkblue;
+    border-radius: .9rem;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    #{&}__data{
+        background-color: $blue;
+        border-radius: .9rem;
+        display: flex;
+        padding: 1.8rem;
+    }
+    #{&}__title{
+        color: $paleblue;
+        font-size: 1rem;
+        font-weight: 400;
+        padding-left: 1.3rem;
+    }
+    #{&}__name{
+        color: $white;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-top: .2rem;
+    }
+    #{&}__image{
+        border: solid 3px #fff;
+        border-radius: 50%;
+        width: 4rem;
+    }
+    #{&}__time{
+        color: $desaturedblue;
+    }
+}
+
+ol{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+    padding: 1.5rem 1.8rem;
+    margin: 0;
+}

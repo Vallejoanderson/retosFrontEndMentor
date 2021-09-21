@@ -4,23 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">   
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
 </head>
 <body>
   <div id="app" class="container">
     <div class="profile">
-      <h1 class="profile__title">
-        Report for
-        <span>Jeremy Robson</span>
-      </h1>
+      <div class="profile__data">
+        <img class="profile__image" src="images/image-jeremy.png" alt="">
+        <h1 class="profile__title">
+          Report for
+          <span class="profile__name">Jeremy Robson</span>
+        </h1>
+      </div>
       <ol>
-        <li @click="time = 'daily'" >
+        <li class="profile__time" @click="time = 'daily'" >
           Daily
         </li>
-        <li @click="time = 'weekly'">
+        <li class="profile__time" @click="time = 'weekly'">
           Weekly
         </li>
-        <li @click="time = 'monthly'">
+        <li class="profile__time" @click="time = 'monthly'">
           Monthly
         </li>
       </ol>
@@ -34,7 +41,7 @@
       </div>
       <div class="card__info">
         <p class="card__hours">
-          {{ alldata[0].timeframes[time].current }}
+          {{ alldata[0].timeframes[time].current }}hrs
         </p>
         <p class="card__time">
           Last Week  - {{ alldata[0].timeframes[time].previous }}hrs
@@ -50,10 +57,10 @@
       </div>
       <div class="card__info">
         <p class="card__hours">
-
+          {{ alldata[1].timeframes[time].current }}hrs
         </p>
         <p class="card__time">
-
+          Last Week  - {{ alldata[1].timeframes[time].previous }}hrs
         </p>
       </div>
     </div>
@@ -66,10 +73,10 @@
       </div>
       <div class="card__info">
         <p class="card__hours" v-bind="alldata.title">
-
+          {{ alldata[2].timeframes[time].current }}hrs
         </p>
         <p class="card__time">
-
+          Last Week  - {{ alldata[2].timeframes[time].previous }}hrs
         </p>
       </div>
     </div>
@@ -82,10 +89,10 @@
       </div>
       <div class="card__info">
         <p class="card__hours">
-
+          {{ alldata[3].timeframes[time].current }}hrs
         </p>
         <p class="card__time">
-
+          Last Week  - {{ alldata[3].timeframes[time].previous }}hrs
         </p>
       </div>
     </div>
@@ -98,10 +105,10 @@
       </div>
       <div class="card__info">
         <p class="card__hours">
-
+          {{ alldata[4].timeframes[time].current }}hrs
         </p>
         <p class="card__time">
-
+          Last Week  - {{ alldata[4].timeframes[time].previous }}hrs
         </p>
       </div>
     </div>
@@ -114,15 +121,14 @@
       </div>
       <div class="card__info">
         <p class="card__hours">
-
+          {{ alldata[5].timeframes[time].current }}hrs
         </p>
         <p class="card__time">
-
+          Last Week  - {{ alldata[5].timeframes[time].previous }}hrs
         </p>
       </div>
     </div>
   </div>
-  <pre>{{ $app.data }}</pre>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="scripts/app.js"></script>
