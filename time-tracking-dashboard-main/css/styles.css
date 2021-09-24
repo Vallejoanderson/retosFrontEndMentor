@@ -4,17 +4,21 @@ body {
   font-size: 18px;
 }
 
+.container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .profile {
   background-color: #1c1f4a;
-  border-radius: 0.9rem;
-  margin-top: 5rem;
+  border-radius: 0.8rem;
   margin-left: auto;
   margin-right: auto;
   width: 95%;
 }
 .profile .profile__data {
   background-color: #5847eb;
-  border-radius: 0.9rem;
+  border-radius: 0.8rem;
   display: flex;
   padding: 1.8rem;
 }
@@ -47,6 +51,74 @@ ol {
   text-align: center;
   padding: 1.5rem 1.8rem;
   margin: 0;
+}
+
+.card--background-orange {
+  background-color: #ff8c66;
+  background-image: url(/images/icon-work.svg);
+}
+
+.card--background-blue {
+  background-color: #56c2e6;
+  background-image: url(/images/icon-play.svg);
+}
+
+.card--background-pink {
+  background-color: #ff5c7c;
+  background-image: url(/images/icon-study.svg);
+}
+
+.card--background-green {
+  background-color: #4acf81;
+  background-image: url(/images/icon-exercise.svg);
+}
+
+.card--background-violet {
+  background-color: #7536d3;
+  background-image: url(/images/icon-social.svg);
+}
+
+.card--background-yellow {
+  background-color: #f1c65b;
+  background-image: url(/images/icon-self-care.svg);
+}
+
+.card {
+  background-position: 95% -5%;
+  background-repeat: no-repeat;
+  border-radius: 0.8rem;
+  color: #fff;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.8rem;
+  width: 95%;
+}
+.card .card__info {
+  background-color: #1c1f4a;
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 1.2rem;
+}
+.card .card__title {
+  font-size: 1rem;
+  margin: 0;
+}
+.card .card__hours {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+.card .card__more {
+  margin-left: 80%;
+}
+.card .card__time {
+  color: #bdc1ff;
+  font-size: 0.9rem;
+  margin: 0;
+  margin-top: 1.3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

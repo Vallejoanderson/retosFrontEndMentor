@@ -32,100 +32,112 @@
         </li>
       </ol>
     </div>
-    <div class="card">
-      <div class="card__top">
-        <h2 class="card__title">
-          Work
-        </h2>
-        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
-      </div>
+    <div class="card card--background-orange">
       <div class="card__info">
-        <p class="card__hours">
-          {{ alldata[0].timeframes[time].current }}hrs
-        </p>
-        <p class="card__time">
-          Last Week  - {{ alldata[0].timeframes[time].previous }}hrs
-        </p>
+          <div class="card__current">
+            <h2 class="card__title">
+              Work
+            </h2>
+            <p class="card__hours">
+              {{ alldata[0].timeframes[time].current }}hrs
+            </p>
+          </div>
+          <div class="card__past">
+            <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+            <p class="card__time">
+              Last Week  - {{ alldata[0].timeframes[time].previous }}hrs
+            </p>
+          </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card__top">
-        <h2 class="card__title">
-          Play
-        </h2>
-        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
-      </div>
+    <div class="card card--background-blue">
       <div class="card__info">
-        <p class="card__hours">
-          {{ alldata[1].timeframes[time].current }}hrs
-        </p>
-        <p class="card__time">
-          Last Week  - {{ alldata[1].timeframes[time].previous }}hrs
-        </p>
+        <div class="card__current">
+          <h2 class="card__title">
+            Play
+          </h2>
+          <p class="card__hours">
+            {{ alldata[1].timeframes[time].current }}hrs
+          </p>
+        </div>
+        <div class="card__past">
+          <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+          <p class="card__time">
+            Last Week  - {{ alldata[1].timeframes[time].previous }}hrs
+          </p>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card__top">
-        <h2 class="card__title">
-          Study
-        </h2>
-        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
-      </div>
+    <div class="card card--background-pink">
       <div class="card__info">
-        <p class="card__hours" v-bind="alldata.title">
-          {{ alldata[2].timeframes[time].current }}hrs
-        </p>
-        <p class="card__time">
-          Last Week  - {{ alldata[2].timeframes[time].previous }}hrs
-        </p>
+        <div class="card__current">
+          <h2 class="card__title">
+            Study
+          </h2>
+          <p class="card__hours" v-bind="alldata.title">
+            {{ alldata[2].timeframes[time].current }}hrs
+          </p>
+        </div>
+        <div class="card__past">
+          <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+          <p class="card__time">
+            Last Week  - {{ alldata[2].timeframes[time].previous }}hrs
+          </p>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card__top">
-        <h2 class="card__title">
-          Exercise
-        </h2>
-        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
-      </div>
+    <div class="card card--background-green">
       <div class="card__info">
-        <p class="card__hours">
-          {{ alldata[3].timeframes[time].current }}hrs
-        </p>
-        <p class="card__time">
-          Last Week  - {{ alldata[3].timeframes[time].previous }}hrs
-        </p>
+        <div class="card__current">
+          <h2 class="card__title">
+            Exercise
+          </h2>
+          <p class="card__hours">
+            {{ alldata[3].timeframes[time].current }}hrs
+          </p>
+        </div>
+        <div class="card__past">
+          <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+          <p class="card__time">
+            Last Week  - {{ alldata[3].timeframes[time].previous }}hrs
+          </p>
+        </div>
       </div>
     </div>
-    <div class="card">   
-      <div class="card__top">
-        <h2 class="card__title">
-          Social
-        </h2>
-        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
-      </div>
+    <div class="card card--background-violet">   
       <div class="card__info">
-        <p class="card__hours">
-          {{ alldata[4].timeframes[time].current }}hrs
-        </p>
-        <p class="card__time">
-          Last Week  - {{ alldata[4].timeframes[time].previous }}hrs
-        </p>
+        <div class="card__current">
+          <h2 class="card__title">
+            Social
+          </h2>
+          <p class="card__hours">
+            {{ alldata[4].timeframes[time].current }}hrs
+          </p>
+        </div>
+        <div class="card__past">
+          <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+          <p class="card__time">
+            Last Week  - {{ alldata[4].timeframes[time].previous }}hrs
+          </p>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card__top">
-        <h2 class="card__title">
-          Self Care
-        </h2>
-        <img src="images/icon-ellipsis.svg" alt="" class="card__more">
-      </div>
+    <div class="card card--background-yellow">
       <div class="card__info">
-        <p class="card__hours">
-          {{ alldata[5].timeframes[time].current }}hrs
-        </p>
-        <p class="card__time">
-          Last Week  - {{ alldata[5].timeframes[time].previous }}hrs
-        </p>
+        <div class="card__current">
+          <h2 class="card__title">
+            Self Care
+          </h2>
+          <p class="card__hours">
+            {{ alldata[5].timeframes[time].current }}hrs
+          </p>
+        </div>
+        <div class="card__past">
+          <img src="images/icon-ellipsis.svg" alt="" class="card__more">
+          <p class="card__time">
+            Last Week  - {{ alldata[5].timeframes[time].previous }}hrs
+          </p>
+        </div>
       </div>
     </div>
   </div>
