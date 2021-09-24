@@ -9,7 +9,7 @@ $verydarkblue:  hsl(226, 43%, 10%);
 $darkblue:      hsl(235, 46%, 20%);
 $desaturedblue: hsl(235, 45%, 61%);
 $paleblue:      hsl(236, 100%, 87%);
-$white:         #fff;
+$white:         rgb(247, 242, 242);
 
 body{
     background-color: $verydarkblue;
@@ -18,6 +18,7 @@ body{
 }
 
 .container{
+    display: grid;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -106,11 +107,26 @@ ol{
     margin-right: auto;
     padding-top: 2.8rem;
     width: 95%;
+    @media (min-width: 640px){
+        max-width: 280px;
+    }
+    #{&}__current{
+        display: flex;
+        justify-content: space-between;
+        @media (min-width: 640px){
+            margin-bottom: .7rem;
+        }
+    }
+    #{&}__past{
+        display: flex;
+        justify-content: space-between;
+        @media (min-width: 640px){
+            flex-direction: column;
+        }
+    }
     #{&}__info{
         background-color: $darkblue;
         border-radius: .8rem;
-        display: flex;
-        justify-content: space-between;
         padding: 1.6rem 1.2rem;
     }
     #{&}__title{
@@ -122,14 +138,20 @@ ol{
         font-weight: 300;
         margin: 0;
         margin-top: .5rem;
+        @media (min-width: 640px){
+            font-size: 3rem;
+        }
     }
     #{&}__more{
-        margin-left: 80%;
+        height: 5px;
     }
     #{&}__time{
         color: $paleblue;
         font-size: .9rem;
         margin: 0;
         margin-top: 1.3rem;
+        @media (min-width: 640px){
+            margin-top: .3rem;
+        }
     }
 }

@@ -5,6 +5,7 @@ body {
 }
 
 .container {
+  display: grid;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -29,7 +30,7 @@ body {
   padding-left: 1.3rem;
 }
 .profile .profile__name {
-  color: #fff;
+  color: #f7f2f2;
   display: block;
   font-size: 1.5rem;
   font-weight: 300;
@@ -87,18 +88,39 @@ ol {
   background-position: 95% -5%;
   background-repeat: no-repeat;
   border-radius: 0.8rem;
-  color: #fff;
+  color: #f7f2f2;
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2.8rem;
   width: 95%;
 }
+@media (min-width: 640px) {
+  .card {
+    max-width: 280px;
+  }
+}
+.card .card__current {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 640px) {
+  .card .card__current {
+    margin-bottom: 0.7rem;
+  }
+}
+.card .card__past {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 640px) {
+  .card .card__past {
+    flex-direction: column;
+  }
+}
 .card .card__info {
   background-color: #1c1f4a;
   border-radius: 0.8rem;
-  display: flex;
-  justify-content: space-between;
   padding: 1.6rem 1.2rem;
 }
 .card .card__title {
@@ -111,14 +133,24 @@ ol {
   margin: 0;
   margin-top: 0.5rem;
 }
+@media (min-width: 640px) {
+  .card .card__hours {
+    font-size: 3rem;
+  }
+}
 .card .card__more {
-  margin-left: 80%;
+  height: 5px;
 }
 .card .card__time {
   color: #bdc1ff;
   font-size: 0.9rem;
   margin: 0;
   margin-top: 1.3rem;
+}
+@media (min-width: 640px) {
+  .card .card__time {
+    margin-top: 0.3rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
